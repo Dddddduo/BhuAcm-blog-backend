@@ -48,7 +48,7 @@ spring:
   # redis配置
   redis:
     # Redis服务器地址
-    host: localhost
+    host: 182.92.125.34
     # Redis服务器连接端口
     port: 6379
     # Redis服务器连接密码（默认为空）
@@ -81,10 +81,22 @@ spring:
   # 邮箱配置
   mail:
     host: smtp.qq.com
-    # 用户名
+    # 邮箱账号
     username: 1732446549@qq.com
     # 授权码
     password: mxytgpalxokeedjd
+    port: 465
+    protocol: smtps
+    properties:
+      mail:
+        smtp:
+        ssl:
+          enable: true
+          required: false
+          debug: true
+
+
+
 # 博客链接
 blog:
   url: https://www.ttkwsd.top/

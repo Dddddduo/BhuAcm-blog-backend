@@ -50,6 +50,7 @@ public class EmailService {
             MimeMessageHelper mimeMessageHelper = new MimeMessageHelper(mimeMessage);
             Context context = new Context();
             context.setVariables(mailDTO.getContentMap());
+
             String process = templateEngine.process(mailDTO.getTemplate(), context);
             mimeMessageHelper.setFrom(email);
             mimeMessageHelper.setTo(mailDTO.getToEmail());

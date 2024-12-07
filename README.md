@@ -1,10 +1,5 @@
 ## 博客介绍
 
-<p align="center">
-  <a href="https://www.moonlit.icu/">
-    <img src="https://foruda.gitee.com/avatar/1662735858745624876/7774198_wu_shengdong_1662735858.png" alt="个人博客" style="border-radius: 50%;">
-  </a>
-</p>
 
 <p align="center">
    基于Springboot + Vue3 开发的前后端分离博客
@@ -89,11 +84,7 @@ ElasticSearch + RabbitMQ + Canal
 | Elasticsearch | 7.17.3 |
 |   RabbitMQ    | 3.9.11 |
 
-## 项目截图
 
-![](https://static.ttkwsd.top/article/29ebbffccbe4367b8c113f9dee9184fc.png)
-![](https://static.ttkwsd.top/article/14f21792d32ceac730dad62798ac353c.png)
-![](https://static.ttkwsd.top/article/d4efdf65ea8a393693e317cdebdb6b43.png)
 
 ## 后续计划
 
