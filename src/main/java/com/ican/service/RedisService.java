@@ -31,21 +31,17 @@ public class RedisService {
         return redisTemplate.getExpire(key, timeUnit);
     }
 
-
     public Collection<String> getKeys(String pattern) {
         return redisTemplate.keys(pattern);
     }
-
 
     public Boolean hasKey(String key) {
         return redisTemplate.hasKey(key);
     }
 
-
     public <T> void setObject(String key, T value) {
         redisTemplate.opsForValue().set(key, value);
     }
-
 
     public <T> void setObject(String key, T value, long timeout, TimeUnit timeUnit) {
         redisTemplate.opsForValue().set(key, value, timeout, timeUnit);

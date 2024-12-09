@@ -68,8 +68,10 @@ public class LoginService {
         // 校验指定账号是否已被封禁，如果被封禁则抛出异常 `DisableServiceException`
         StpUtil.checkDisable(user.getId());
         // 通过校验后，再进行登录
+        // 标记当前会话登录的账号id
         StpUtil.login(user.getId());
         return StpUtil.getTokenValue();
+
     }
 
     public void sendCode(String username) {
