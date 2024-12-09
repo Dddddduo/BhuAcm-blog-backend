@@ -81,6 +81,7 @@ public class UserService extends ServiceImpl<UserMapper, User> {
     }
 
     public UserInfoResp getUserInfo() {
+        // 获取当前会话登录id,
         Integer userId = StpUtil.getLoginIdAsInt();
         User user = userMapper.selectOne(new LambdaQueryWrapper<User>()
                 .select(User::getNickname, User::getAvatar, User::getUsername, User::getWebSite,

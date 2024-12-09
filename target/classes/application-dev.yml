@@ -12,7 +12,7 @@ spring:
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/blog?serverTimezone=Asia/Shanghai
+    url: jdbc:mysql://localhost:3306/blog
     username: root
     password: 123456
     druid:
@@ -95,11 +95,9 @@ spring:
           required: false
           debug: true
 
-
-
 # 博客链接
 blog:
-  url: https://www.ttkwsd.top/
+  url: https://blog.csdn.net/qq_30500575?spm=1001.2101.3001.5343
 # 线程池配置
 thread:
   pool:
@@ -165,6 +163,7 @@ mybatis-plus:
 #  socketTimeout: 30000
 #  connectionRequestTimeout: 5000
 # Sa-Token 配置 (文档: https://sa-token.cc)
+
 sa-token:
   # token名称 (同时也是cookie名称)
   token-name: Authorization
@@ -192,6 +191,7 @@ sa-token:
   is-read-header: true
   # 是否输出操作日志
   is-log: false
+
 # 第三方登录
 oauth:
   gitee:

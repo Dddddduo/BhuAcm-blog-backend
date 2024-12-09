@@ -149,25 +149,29 @@
       "name": "thread.pool.core-pool-size",
       "type": "java.lang.Integer",
       "description": "核心线程池大小",
-      "sourceType": "com.ican.config.properties.ThreadPoolProperties"
+      "sourceType": "com.ican.config.properties.ThreadPoolProperties",
+      "defaultValue": 0
     },
     {
       "name": "thread.pool.keep-alive-seconds",
       "type": "java.lang.Integer",
       "description": "线程池维护线程所允许的空闲时间",
-      "sourceType": "com.ican.config.properties.ThreadPoolProperties"
+      "sourceType": "com.ican.config.properties.ThreadPoolProperties",
+      "defaultValue": 0
     },
     {
       "name": "thread.pool.max-pool-size",
       "type": "java.lang.Integer",
       "description": "最大可创建的线程数",
-      "sourceType": "com.ican.config.properties.ThreadPoolProperties"
+      "sourceType": "com.ican.config.properties.ThreadPoolProperties",
+      "defaultValue": 0
     },
     {
       "name": "thread.pool.queue-capacity",
       "type": "java.lang.Integer",
       "description": "队列最大长度",
-      "sourceType": "com.ican.config.properties.ThreadPoolProperties"
+      "sourceType": "com.ican.config.properties.ThreadPoolProperties",
+      "defaultValue": 0
     },
     {
       "name": "upload.cos.bucket-name",
