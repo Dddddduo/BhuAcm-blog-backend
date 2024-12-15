@@ -217,6 +217,7 @@
                  a.id DESC
     </select>
 
+<!--    查找某篇特定文章-->
     <select id="selectArticleHomeById" resultMap="articleVO">
         SELECT a.id,
                article_cover,

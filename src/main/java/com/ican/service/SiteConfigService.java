@@ -35,10 +35,12 @@ public class SiteConfigService extends ServiceImpl<SiteConfigMapper, SiteConfig>
     private BlogFileService blogFileService;
 
     public SiteConfig getSiteConfig() {
+        // 先从redis里面去获取
         SiteConfig siteConfig = redisService.getObject(RedisConstant.SITE_SETTING);
         if (Objects.isNull(siteConfig)) {
-            // 从数据库中加载
+            // redis里面没有数据 从数据库中加载
             siteConfig = siteConfigMapper.selectById(1);
+            // 把数据加载到redis里面
             redisService.setObject(RedisConstant.SITE_SETTING, siteConfig);
         }
         return siteConfig;
