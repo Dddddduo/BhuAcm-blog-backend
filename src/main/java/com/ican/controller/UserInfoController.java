@@ -32,10 +32,18 @@ public class UserInfoController {
      *
      * @return {@link UserInfoResp} 用户信息
      */
-    @SaCheckLogin
+
+    /*
+    * @SaCheckLogin注解是一种基于Spring Boot的安全框架——Saber的注解之一。
+    * 该注解可以用于控制器中的方法上，用于限制只有登录用户才能访问该方法。
+    * 当用户未登录时，访问该方法会自动跳转到登录页面。
+    * 在使用该注解时，需要在Saber的配置文件中进行相关配置，包括登录页面的URL、未登录用户访问受限页面的URL等等。
+    * */
+//    @SaCheckLogin
     @ApiOperation(value = "获取登录用户信息")
     @GetMapping("/user/getUserInfo")
     public Result<UserInfoResp> getUserInfo() {
+
         return Result.success(userService.getUserInfo());
     }
 
