@@ -82,6 +82,7 @@ public class TalkController {
     @SaCheckPermission("web:talk:add")
     @PostMapping("/admin/talk/add")
     public Result<?> addTalk(@Validated @RequestBody TalkReq talk) {
+        // 添加说说
         talkService.addTalk(talk);
         return Result.success();
     }

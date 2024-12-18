@@ -2,6 +2,7 @@ package com.ican.controller;
 
 import cn.dev33.satoken.annotation.SaCheckLogin;
 import cn.dev33.satoken.annotation.SaCheckPermission;
+import cn.dev33.satoken.stp.StpUtil;
 import com.ican.model.vo.Result;
 import com.ican.model.vo.request.EmailReq;
 import com.ican.model.vo.request.UserInfoReq;
@@ -14,6 +15,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
+
+import javax.servlet.http.HttpServletRequest;
 
 /**
  * 用户信息控制器
@@ -42,7 +45,18 @@ public class UserInfoController {
 //    @SaCheckLogin
     @ApiOperation(value = "获取登录用户信息")
     @GetMapping("/user/getUserInfo")
-    public Result<UserInfoResp> getUserInfo() {
+    public Result<UserInfoResp> getUserInfo(HttpServletRequest request) {
+
+        // 从请求中获取当前请求的token token名为satoken
+        String token1 = request.getHeader("Authorization");
+        System.out.println(token1);
+
+        // 判断一下登录状态
+        System.out.println("登录状态: "+StpUtil.isLogin());
+
+        // 从sa-token里面获取token
+        String token2 = StpUtil.getTokenValue();  // 获取当前线程的 token
+        System.out.println("Token: " + token2);  // 打印出 token 以便调试
 
         return Result.success(userService.getUserInfo());
     }

@@ -5,7 +5,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f3efd016-e5d7-4c4e-b7a1-acb671bfcc6b" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.cache/.Apifox_Helper/.toolWindow.db" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.cache/.Apifox_Helper/.toolWindow.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ican/controller/TalkController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ican/controller/TalkController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ican/controller/UserInfoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ican/controller/UserInfoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ican/satoken/SaTokenConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ican/satoken/SaTokenConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ican/service/LoginService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ican/service/LoginService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ican/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ican/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/blog-springboot-2.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/blog-springboot-2.0.jar.original" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/spring-configuration-metadata.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/META-INF/spring-configuration-metadata.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ican/config/ThreadPoolConfig$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ican/config/ThreadPoolConfig$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ican/controller/TalkController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ican/controller/TalkController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ican/controller/UserInfoController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ican/controller/UserInfoController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ican/interceptor/AccessLimitInterceptor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ican/interceptor/AccessLimitInterceptor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ican/interceptor/PageableInterceptor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ican/interceptor/PageableInterceptor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ican/satoken/SaTokenConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ican/satoken/SaTokenConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ican/service/LoginService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ican/service/LoginService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ican/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ican/service/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,7 +121,7 @@
       <workItem from="1733989652531" duration="2575000" />
       <workItem from="1734172301355" duration="8652000" />
       <workItem from="1734191447827" duration="12472000" />
-      <workItem from="1734391849260" duration="3014000" />
+      <workItem from="1734391849260" duration="27970000" />
     </task>
     <servers />
   </component>
@@ -123,9 +145,14 @@
           <option name="timeStamp" value="19" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/ican/service/UserService.java</url>
-          <line>84</line>
-          <option name="timeStamp" value="30" />
+          <url>file://$PROJECT_DIR$/src/main/java/com/ican/service/TalkService.java</url>
+          <line>78</line>
+          <option name="timeStamp" value="39" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/ican/controller/TalkController.java</url>
+          <line>85</line>
+          <option name="timeStamp" value="40" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -82,28 +82,37 @@ public class UserService extends ServiceImpl<UserMapper, User> {
 
     public UserInfoResp getUserInfo() {
         // 获取当前会话登录id,
-        Integer userId = StpUtil.getLoginIdAsInt();
-        User user = userMapper.selectOne(new LambdaQueryWrapper<User>()
-                .select(User::getNickname, User::getAvatar, User::getUsername, User::getWebSite,
-                        User::getIntro, User::getEmail, User::getLoginType)
-                .eq(User::getId, userId));
-        Set<Object> articleLikeSet = redisService.getSet(RedisConstant.USER_ARTICLE_LIKE + userId);
-        Set<Object> commentLikeSet = redisService.getSet(RedisConstant.USER_COMMENT_LIKE + userId);
-        Set<Object> talkLikeSet = redisService.getSet(RedisConstant.USER_TALK_LIKE + userId);
-        return UserInfoResp
-                .builder()
-                .id(userId)
-                .avatar(user.getAvatar())
-                .nickname(user.getNickname())
-                .username(user.getUsername())
-                .email(user.getEmail())
-                .webSite(user.getWebSite())
-                .intro(user.getIntro())
-                .articleLikeSet(articleLikeSet)
-                .commentLikeSet(commentLikeSet)
-                .talkLikeSet(talkLikeSet)
-                .loginType(user.getLoginType())
-                .build();
+        // 这边有错误,为什么不写异常？
+        try{
+            // todo 拿不到这个数据
+            Integer userId = StpUtil.getLoginIdAsInt();
+            System.out.println("当前登录账号的Id: "+userId);
+
+            User user = userMapper.selectOne(new LambdaQueryWrapper<User>()
+                    .select(User::getNickname, User::getAvatar, User::getUsername, User::getWebSite,
+                            User::getIntro, User::getEmail, User::getLoginType)
+                    .eq(User::getId, userId));
+            Set<Object> articleLikeSet = redisService.getSet(RedisConstant.USER_ARTICLE_LIKE + userId);
+            Set<Object> commentLikeSet = redisService.getSet(RedisConstant.USER_COMMENT_LIKE + userId);
+            Set<Object> talkLikeSet = redisService.getSet(RedisConstant.USER_TALK_LIKE + userId);
+            return UserInfoResp
+                    .builder()
+                    .id(userId)
+                    .avatar(user.getAvatar())
+                    .nickname(user.getNickname())
+                    .username(user.getUsername())
+                    .email(user.getEmail())
+                    .webSite(user.getWebSite())
+                    .intro(user.getIntro())
+                    .articleLikeSet(articleLikeSet)
+                    .commentLikeSet(commentLikeSet)
+                    .talkLikeSet(talkLikeSet)
+                    .loginType(user.getLoginType())
+                    .build();
+        }catch (Exception e){
+            e.printStackTrace();
+            throw e;
+        }
     }
 
     public List<RouterResp> getUserMenu() {
