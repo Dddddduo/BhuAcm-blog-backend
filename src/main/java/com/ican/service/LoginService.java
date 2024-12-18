@@ -60,17 +60,39 @@ public class LoginService {
     private ThreadPoolTaskExecutor threadPoolTaskExecutor;
 
     public String login(LoginReq login) {
-        User user = userMapper.selectOne(new LambdaQueryWrapper<User>()
-                .select(User::getId)
-                .eq(User::getUsername, login.getUsername())
-                .eq(User::getPassword, SecurityUtils.sha256Encrypt(login.getPassword())));
-        Assert.notNull(user, "用户不存在或密码错误");
-        // 校验指定账号是否已被封禁，如果被封禁则抛出异常 `DisableServiceException`
-        StpUtil.checkDisable(user.getId());
-        // 通过校验后，再进行登录
-        // 标记当前会话登录的账号id
-        StpUtil.login(user.getId());
-        return StpUtil.getTokenValue();
+        try {
+            User user = userMapper.selectOne(new LambdaQueryWrapper<User>()
+                    .select(User::getId)
+                    .eq(User::getUsername, login.getUsername())
+                    .eq(User::getPassword, SecurityUtils.sha256Encrypt(login.getPassword())));
+            Assert.notNull(user, "用户不存在或密码错误");
+
+            // 校验指定账号是否已被封禁，如果被封禁则抛出异常 `DisableServiceException`
+            StpUtil.checkDisable(user.getId());
+
+            // 通过校验后，再进行登录
+
+            // 标记当前会话登录的账号id
+            StpUtil.login(user.getId());
+
+            // 拿到当前登录账号的Id
+            Integer userId = StpUtil.getLoginIdAsInt();
+            System.out.println("当前登录账号的Id: "+userId);
+
+            String token = StpUtil.getTokenValue();  // 获取当前线程的 token
+            System.out.println("Token: " + token);  // 打印出 token 以便调试
+
+//            //获取当前是否登录
+//            StpUtil.isLogin();
+            System.out.println("登录状态: "+StpUtil.isLogin());
+//            //检验当前会话是否已经登录
+//            StpUtil.checkLogin();
+
+            return StpUtil.getTokenValue();
+        } catch (IllegalArgumentException e) {
+            e.printStackTrace();
+            throw e;
+        }
 
     }
 
