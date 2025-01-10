@@ -38,8 +38,8 @@ import java.util.stream.Collectors;
 /**
  * 文章服务
  *
- * @author ican
- * @date 2022/12/04 22:31
+ * @author Dduo
+ * @date 2024/12/04 22:31
  **/
 @Service
 public class ArticleService extends ServiceImpl<ArticleMapper, Article> {

@@ -9,7 +9,7 @@ import java.util.List;
 /**
  * 拷贝工具
  *
- * @author ican
+ * @author Dduo
  */
 @Slf4j
 public class BeanCopyUtils {

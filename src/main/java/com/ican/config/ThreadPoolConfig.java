@@ -15,8 +15,8 @@ import java.util.concurrent.ThreadPoolExecutor;
 /**
  * 线程池配置
  *
- * @author ican
- * @date 2022/12/05 11:12
+ * @author Dduo
+ * @date 2024/12/05 11:12
  **/
 @Configuration
 public class ThreadPoolConfig {

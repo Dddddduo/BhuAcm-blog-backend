@@ -7,8 +7,8 @@ import lombok.Data;
 /**
  * 用户菜单Response
  *
- * @author ican
- * @date 2022/12/06 16:41
+ * @author Dduo
+ * @date 2024/12/06 16:41
  **/
 @Data
 @ApiModel(description = "用户菜单Response")

@@ -7,7 +7,7 @@ import lombok.Data;
 /**
  * 定时任务运行Request
  *
- * @author ican
+ * @author Dduo
  */
 @Data
 @ApiModel(description = "定时任务运行Request")

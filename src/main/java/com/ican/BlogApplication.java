@@ -6,8 +6,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 /**
  * 博客启动类
  *
- * @author ican
- * @date 2022/11/28 18:54
+ * @author Dduo
+ * @date 2024/11/28 18:54
  **/
 @SpringBootApplication
 public class BlogApplication {

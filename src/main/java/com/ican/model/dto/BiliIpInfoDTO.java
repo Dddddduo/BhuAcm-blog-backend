@@ -9,7 +9,7 @@ import lombok.NoArgsConstructor;
 /**
  * B站IP地址返回DTO
  *
- * @author ican
+ * @author Dduo
  * @date 2024/06/21 22:52
  **/
 @Data

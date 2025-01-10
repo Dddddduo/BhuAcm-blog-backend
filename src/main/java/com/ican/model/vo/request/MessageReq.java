@@ -9,8 +9,8 @@ import javax.validation.constraints.NotBlank;
 /**
  * 留言Request
  *
- * @author ican
- * @date 2022/12/28 19:52
+ * @author Dduo
+ * @date 2024/12/28 19:52
  **/
 @Data
 @ApiModel(description = "留言Request")

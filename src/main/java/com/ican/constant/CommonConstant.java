@@ -3,8 +3,8 @@ package com.ican.constant;
 /**
  * 公共常量
  *
- * @author ican
- * @date 2022/12/07 15:46
+ * @author Dduo
+ * @date 2024/12/07 15:46
  **/
 public class CommonConstant {
 

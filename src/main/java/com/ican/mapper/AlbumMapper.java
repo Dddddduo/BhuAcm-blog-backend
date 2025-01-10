@@ -14,7 +14,7 @@ import java.util.List;
 /**
  * 相册 Mapper
  *
- * @author ican
+ * @author Dduo
  */
 @Repository
 public interface AlbumMapper extends BaseMapper<Album> {

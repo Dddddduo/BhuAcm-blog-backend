@@ -22,7 +22,7 @@ import java.util.List;
 /**
  * 轮播图服务
  *
- * @author ican
+ * @author Dduo
  */
 @Service
 public class CarouselService extends ServiceImpl<CarouselMapper, Carousel> {

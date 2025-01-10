@@ -10,8 +10,8 @@ import javax.validation.constraints.NotNull;
 /**
  * 菜单Request
  *
- * @author ican
- * @date 2022/12/08 11:57
+ * @author Dduo
+ * @date 2024/12/08 11:57
  **/
 @Data
 @ApiModel(description = "菜单Request")

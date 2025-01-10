@@ -3,7 +3,7 @@ package com.ican.enums;
 /**
  * 脱敏策略枚举
  *
- * @author ican
+ * @author Dduo
  * @date 2024/01/14 16:04
  **/
 public enum DesensitizationTypeEnum {

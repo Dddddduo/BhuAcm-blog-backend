@@ -8,7 +8,7 @@ import lombok.EqualsAndHashCode;
 /**
  * 轮播图查询条件
  *
- * @author ican
+ * @author Dduo
  * @date 2024/02/03 12:07
  **/
 @Data

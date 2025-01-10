@@ -3,7 +3,7 @@ package com.ican.utils;
 /**
  * 媒体类型工具类
  *
- * @author ican
+ * @author Dduo
  */
 public class MimeTypeUtils {
     public static final String IMAGE_PNG = "image/png";

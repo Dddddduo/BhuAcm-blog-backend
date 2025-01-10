@@ -6,7 +6,7 @@ import org.apache.commons.lang3.StringUtils;
 /**
  * 密码加密
  *
- * @author ican
+ * @author Dduo
  **/
 public class SecurityUtils {
 

@@ -9,7 +9,7 @@ import javax.validation.constraints.NotBlank;
 /**
  * 用户信息Request
  *
- * @author ican
+ * @author Dduo
  */
 @Data
 @ApiModel(description = "用户信息Request")

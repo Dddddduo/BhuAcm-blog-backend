@@ -8,7 +8,7 @@ import lombok.Data;
 /**
  * 第三方账号信息DTO
  *
- * @author ican
+ * @author Dduo
  */
 @Data
 @Builder

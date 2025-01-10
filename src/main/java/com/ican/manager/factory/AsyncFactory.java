@@ -14,7 +14,7 @@ import java.util.TimerTask;
 /**
  * 异步工厂（产生任务用）
  *
- * @author ican
+ * @author Dduo
  */
 public class AsyncFactory {
 

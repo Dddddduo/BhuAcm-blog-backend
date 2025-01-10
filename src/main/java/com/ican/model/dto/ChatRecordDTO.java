@@ -11,7 +11,7 @@ import java.util.List;
 /**
  * 聊天记录DTO
  *
- * @author ican
+ * @author Dduo
  * @date 2023/06/12 10:50
  **/
 @Data

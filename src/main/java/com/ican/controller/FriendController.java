@@ -23,7 +23,7 @@ import static com.ican.constant.OptTypeConstant.*;
 /**
  * 友链控制器
  *
- * @author ican
+ * @author Dduo
  */
 @Api(tags = "友链模块")
 @RestController

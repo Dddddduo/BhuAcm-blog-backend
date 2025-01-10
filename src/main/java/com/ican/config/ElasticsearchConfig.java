@@ -17,7 +17,7 @@
 ///**
 // * Elasticsearch配置
 // *
-// * @author ican
+// * @author Dduo
 // */
 //@Configuration
 //public class ElasticsearchConfig {

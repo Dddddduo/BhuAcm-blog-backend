@@ -13,7 +13,7 @@ import java.util.List;
 /**
  * 留言 Mapper
  *
- * @author ican
+ * @author Dduo
  */
 @Repository
 public interface MessageMapper extends BaseMapper<Message> {

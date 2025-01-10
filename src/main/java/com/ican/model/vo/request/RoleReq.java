@@ -11,8 +11,8 @@ import java.util.List;
 /**
  * 角色Request
  *
- * @author ican
- * @date 2022/12/07 15:36
+ * @author Dduo
+ * @date 2024/12/07 15:36
  **/
 @Data
 @ApiModel(description = "角色Request")

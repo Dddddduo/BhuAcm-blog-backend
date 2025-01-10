@@ -26,8 +26,8 @@ import java.util.stream.Collectors;
 /**
  * 菜单业务接口实现类
  *
- * @author ican
- * @date 2022/12/05 22:13
+ * @author Dduo
+ * @date 2024/12/05 22:13
  **/
 @Service
 public class MenuService extends ServiceImpl<MenuMapper, Menu> {

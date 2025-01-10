@@ -6,7 +6,7 @@ import lombok.Getter;
 /**
  * 登录方式枚举
  *
- * @author ican
+ * @author Dduo
  */
 @Getter
 @AllArgsConstructor

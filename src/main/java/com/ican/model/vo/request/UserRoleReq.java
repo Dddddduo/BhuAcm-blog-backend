@@ -12,7 +12,7 @@ import java.util.List;
 /**
  * 用户角色Request
  *
- * @author ican
+ * @author Dduo
  **/
 @Data
 @ApiModel(description = "用户角色Request")

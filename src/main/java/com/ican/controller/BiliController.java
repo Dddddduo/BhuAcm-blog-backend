@@ -13,7 +13,7 @@ import org.springframework.web.multipart.MultipartFile;
 /**
  * B站服务控制器
  *
- * @author ican
+ * @author Dduo
  * @date 2023/03/24 19:48
  **/
 @Api(tags = "B站服务模块")

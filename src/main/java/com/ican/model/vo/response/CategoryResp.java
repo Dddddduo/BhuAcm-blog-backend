@@ -7,7 +7,7 @@ import lombok.Data;
 /**
  * 分类Response
  *
- * @author ican
+ * @author Dduo
  **/
 @Data
 @ApiModel(description = "分类Response")

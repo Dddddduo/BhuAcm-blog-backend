@@ -12,7 +12,7 @@ import java.util.List;
 /**
  * 文件Mapper
  *
- * @author ican
+ * @author Dduo
  */
 @Repository
 public interface BlogFileMapper extends BaseMapper<BlogFile> {

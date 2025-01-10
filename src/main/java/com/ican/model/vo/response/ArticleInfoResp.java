@@ -10,7 +10,7 @@ import java.util.List;
 /**
  * 文章信息Response
  *
- * @author ican
+ * @author Dduo
  */
 @Data
 @ApiModel(description = "文章信息Response")

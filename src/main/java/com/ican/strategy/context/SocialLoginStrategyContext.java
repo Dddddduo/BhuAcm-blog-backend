@@ -11,7 +11,7 @@ import java.util.Map;
 /**
  * 登录策略上下文
  *
- * @author ican
+ * @author Dduo
  */
 @Service
 public class SocialLoginStrategyContext {

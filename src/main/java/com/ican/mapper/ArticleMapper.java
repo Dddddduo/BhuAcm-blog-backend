@@ -14,8 +14,8 @@ import java.util.List;
 /**
  * 文章 Mapper
  *
- * @author ican
- * @date 2022/12/04 22:29
+ * @author Dduo
+ * @date 2024/12/04 22:29
  **/
 @Repository
 public interface ArticleMapper extends BaseMapper<Article> {

@@ -14,7 +14,7 @@ import org.springframework.stereotype.Service;
 /**
  * 说说点赞策略
  *
- * @author ican
+ * @author Dduo
  */
 @Service("talkLikeStrategyImpl")
 public class TalkLikeStrategyImpl implements LikeStrategy {

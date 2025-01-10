@@ -11,7 +11,7 @@ import java.time.LocalDateTime;
 /**
  * 访问日志
  *
- * @author ican
+ * @author Dduo
  */
 @Data
 public class VisitLog {

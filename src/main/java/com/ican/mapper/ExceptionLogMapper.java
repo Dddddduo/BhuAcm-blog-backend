@@ -11,7 +11,7 @@ import java.util.List;
 /**
  * 异常日志Mapper
  *
- * @author ican
+ * @author Dduo
  */
 @Repository
 public interface ExceptionLogMapper extends BaseMapper<ExceptionLog> {

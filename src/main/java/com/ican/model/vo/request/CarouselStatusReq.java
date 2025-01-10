@@ -9,7 +9,7 @@ import javax.validation.constraints.NotNull;
 /**
  * 轮播图状态Request
  *
- * @author ican
+ * @author Dduo
  * @date 2024/02/11 10:09
  **/
 @Data

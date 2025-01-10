@@ -25,8 +25,8 @@ import static com.ican.enums.StatusCodeEnum.UNAUTHORIZED;
 /**
  * SaToken配置
  *
- * @author ican
- * @date 2022/11/28 22:12
+ * @author Dduo
+ * @date 2024/11/28 22:12
  **/
 @Slf4j
 @Component

@@ -36,8 +36,8 @@ import java.util.stream.Collectors;
 /**
  * 用户业务服务
  *
- * @author ican
- * @date 2022/12/05 15:32
+ * @author Dduo
+ * @date 2024/12/05 15:32
  **/
 @Service
 public class UserService extends ServiceImpl<UserMapper, User> {

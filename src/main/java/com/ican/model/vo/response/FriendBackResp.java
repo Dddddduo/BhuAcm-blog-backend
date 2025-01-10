@@ -10,7 +10,7 @@ import java.time.LocalDateTime;
 /**
  * 友链后台Response
  *
- * @author ican
+ * @author Dduo
  */
 @Data
 @EqualsAndHashCode(callSuper = true)

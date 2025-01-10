@@ -5,7 +5,7 @@ import java.lang.annotation.*;
 /**
  * 操作日志注解
  *
- * @author ican
+ * @author Dduo
  */
 @Documented
 @Target(ElementType.METHOD)

@@ -10,8 +10,8 @@ import java.time.LocalDateTime;
 /**
  * 标签后台Response
  *
- * @author ican
- * @date 2022/12/04 22:37
+ * @author Dduo
+ * @date 2024/12/04 22:37
  **/
 @Data
 @EqualsAndHashCode(callSuper = true)

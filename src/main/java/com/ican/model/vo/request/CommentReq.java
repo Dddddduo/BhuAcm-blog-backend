@@ -20,7 +20,7 @@ import javax.validation.constraints.Null;
 /**
  * 评论Request
  *
- * @author ican
+ * @author Dduo
  */
 @Data
 @NoArgsConstructor

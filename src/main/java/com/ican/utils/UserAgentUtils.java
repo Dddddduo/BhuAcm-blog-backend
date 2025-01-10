@@ -10,7 +10,7 @@ import java.util.Map;
 /**
  * 浏览器工具
  *
- * @author ican
+ * @author Dduo
  */
 public class UserAgentUtils {
 

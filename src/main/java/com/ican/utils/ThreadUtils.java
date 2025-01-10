@@ -8,7 +8,7 @@ import java.util.concurrent.*;
 /**
  * 线程工具类
  *
- * @author ican
+ * @author Dduo
  */
 public class ThreadUtils {
 

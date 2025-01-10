@@ -29,8 +29,8 @@ import java.util.Objects;
 /**
  * AOP记录操作日志
  *
- * @author ican
- * @date 2022/12/02 17:55
+ * @author Dduo
+ * @date 2024/12/02 17:55
  **/
 @Aspect
 @Component

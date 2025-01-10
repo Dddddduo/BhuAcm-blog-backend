@@ -15,7 +15,7 @@ import java.util.List;
 /**
  * 访问服务
  *
- * @author ican
+ * @author Dduo
  */
 @Service
 public class VisitLogService extends ServiceImpl<VisitLogMapper, VisitLog> {

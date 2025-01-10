@@ -10,7 +10,7 @@ import java.lang.annotation.*;
 /**
  * 脱敏注解
  *
- * @author ican
+ * @author Dduo
  */
 @Documented
 @Target(ElementType.FIELD)

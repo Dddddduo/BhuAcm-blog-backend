@@ -11,7 +11,7 @@ import java.util.List;
 /**
  * 审核Request
  *
- * @author ican
+ * @author Dduo
  */
 @Data
 @ApiModel(description = "审核Request")

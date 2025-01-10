@@ -24,7 +24,7 @@ import java.util.Objects;
 /**
  * Gitee登录策略
  *
- * @author ican
+ * @author Dduo
  */
 @Service("giteeLoginStrategyImpl")
 public class GiteeLoginStrategyImpl extends AbstractLoginStrategyImpl {

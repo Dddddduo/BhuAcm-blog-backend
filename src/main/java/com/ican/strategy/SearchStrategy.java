@@ -7,7 +7,7 @@ import java.util.List;
 /**
  * 文章搜索策略
  *
- * @author ican
+ * @author Dduo
  */
 public interface SearchStrategy {
 

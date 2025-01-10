@@ -14,8 +14,8 @@ import java.util.List;
 /**
  * 标签 Mapper
  *
- * @author ican
- * @date 2022/12/02 22:08
+ * @author Dduo
+ * @date 2024/12/02 22:08
  **/
 @Repository
 public interface TagMapper extends BaseMapper<Tag> {

@@ -3,7 +3,7 @@ package com.ican.strategy;
 /**
  * 点赞策略
  *
- * @author ican
+ * @author Dduo
  */
 public interface LikeStrategy {
 

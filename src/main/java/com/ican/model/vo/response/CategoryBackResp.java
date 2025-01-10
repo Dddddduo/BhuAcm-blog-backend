@@ -13,8 +13,8 @@ import java.util.List;
 /**
  * 分类后台Response
  *
- * @author ican
- * @date 2022/12/03 21:43
+ * @author Dduo
+ * @date 2024/12/03 21:43
  **/
 @Data
 @EqualsAndHashCode(callSuper = true)

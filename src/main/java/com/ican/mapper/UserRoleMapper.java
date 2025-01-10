@@ -10,8 +10,8 @@ import java.util.List;
 /**
  * 用户角色 Mapper
  *
- * @author ican
- * @date 2022/12/07 11:09
+ * @author Dduo
+ * @date 2024/12/07 11:09
  **/
 @Repository
 public interface UserRoleMapper extends BaseMapper<UserRole> {

@@ -5,7 +5,7 @@ import com.ican.model.vo.request.CodeReq;
 /**
  * 第三方登录策略
  *
- * @author ican
+ * @author Dduo
  */
 public interface SocialLoginStrategy {
 

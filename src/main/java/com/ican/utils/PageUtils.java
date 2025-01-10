@@ -7,7 +7,7 @@ import java.util.Objects;
 /**
  * 分页工具类
  *
- * @author ican
+ * @author Dduo
  */
 public class PageUtils {
 

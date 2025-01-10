@@ -3,7 +3,7 @@ package com.ican.constant;
 /**
  * 分页常量
  *
- * @author ican
+ * @author Dduo
  */
 public class PageConstant {
 

@@ -15,7 +15,7 @@
 ///**
 // * RabbitMQ配置
 // *
-// * @author ican
+// * @author Dduo
 // **/
 //@Slf4j
 //@Configuration

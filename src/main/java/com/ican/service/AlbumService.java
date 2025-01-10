@@ -26,7 +26,7 @@ import java.util.Objects;
 /**
  * 相册服务
  *
- * @author ican
+ * @author Dduo
  */
 @Service
 public class AlbumService extends ServiceImpl<AlbumMapper, Album> {

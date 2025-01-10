@@ -27,8 +27,8 @@ import java.util.stream.Collectors;
 /**
  * 分类服务
  *
- * @author ican
- * @date 2022/12/02 17:35
+ * @author Dduo
+ * @date 2024/12/02 17:35
  **/
 @Service
 public class CategoryService extends ServiceImpl<CategoryMapper, Category> {

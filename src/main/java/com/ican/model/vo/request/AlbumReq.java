@@ -9,8 +9,8 @@ import javax.validation.constraints.NotBlank;
 /**
  * 相册Request
  *
- * @author ican
- * @date 2022/12/30 15:42
+ * @author Dduo
+ * @date 2024/12/30 15:42
  **/
 @Data
 @ApiModel(description = "相册Request")

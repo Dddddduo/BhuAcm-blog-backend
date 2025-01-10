@@ -3,7 +3,7 @@ package com.ican.validator.groups;
 /**
  * 友链组
  *
- * @author ican
+ * @author Dduo
  **/
 public interface Link {
 }

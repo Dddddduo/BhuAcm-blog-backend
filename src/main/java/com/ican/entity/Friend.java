@@ -11,7 +11,7 @@ import java.time.LocalDateTime;
 /**
  * 友链
  *
- * @author ican
+ * @author Dduo
  */
 @Data
 public class Friend {

@@ -17,7 +17,7 @@ import java.util.Objects;
 /**
  * 评论点赞策略
  *
- * @author ican
+ * @author Dduo
  */
 @Service("commentLikeStrategyImpl")
 public class CommentLikeStrategyImpl implements LikeStrategy {

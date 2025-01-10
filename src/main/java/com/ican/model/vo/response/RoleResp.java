@@ -9,8 +9,8 @@ import java.time.LocalDateTime;
 /**
  * 角色Response
  *
- * @author ican
- * @date 2022/12/07 09:50
+ * @author Dduo
+ * @date 2024/12/07 09:50
  **/
 @Data
 @ApiModel(description = "角色Response")

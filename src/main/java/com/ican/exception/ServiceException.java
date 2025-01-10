@@ -7,8 +7,8 @@ import static com.ican.enums.StatusCodeEnum.FAIL;
 /**
  * 业务异常
  *
- * @author ican
- * @date 2022/12/02 16:18
+ * @author Dduo
+ * @date 2024/12/02 16:18
  **/
 @Getter
 public final class ServiceException extends RuntimeException {

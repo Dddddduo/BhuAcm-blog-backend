@@ -3,7 +3,7 @@ package com.ican.constant;
 /**
  * MQ常量
  *
- * @author ican
+ * @author Dduo
  */
 public class MqConstant {
 

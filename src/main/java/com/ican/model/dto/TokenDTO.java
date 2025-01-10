@@ -7,7 +7,7 @@ import lombok.Data;
 /**
  * Token
  *
- * @author ican
+ * @author Dduo
  */
 @Data
 @ApiModel(description = "Token")

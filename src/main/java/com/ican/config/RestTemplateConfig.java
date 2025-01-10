@@ -11,7 +11,7 @@ import java.util.List;
 /**
  * RestTemplate配置
  *
- * @author ican
+ * @author Dduo
  * @date 2024/01/14 17:21
  **/
 @Configuration

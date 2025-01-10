@@ -26,8 +26,8 @@ import java.util.Optional;
 /**
  * 角色服务
  *
- * @author ican
- * @date 2022/12/07 09:38
+ * @author Dduo
+ * @date 2024/12/07 09:38
  **/
 @Service
 public class RoleService extends ServiceImpl<RoleMapper, Role> {

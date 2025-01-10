@@ -11,7 +11,7 @@ import javax.validation.constraints.Size;
 /**
  * 用户注册信息Request
  *
- * @author ican
+ * @author Dduo
  */
 @Data
 @ApiModel(description = "用户注册信息Request")

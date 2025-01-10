@@ -8,7 +8,7 @@ import lombok.NoArgsConstructor;
 /**
  * websocket聊天室DTO
  *
- * @author ican
+ * @author Dduo
  */
 @Data
 @Builder

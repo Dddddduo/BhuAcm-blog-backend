@@ -19,7 +19,7 @@ import java.util.List;
 /**
  * 友链服务
  *
- * @author ican
+ * @author Dduo
  */
 @Service
 public class FriendService extends ServiceImpl<FriendMapper, Friend> {

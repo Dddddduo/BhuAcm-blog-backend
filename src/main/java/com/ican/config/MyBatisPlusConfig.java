@@ -9,7 +9,7 @@ import org.springframework.context.annotation.Configuration;
 /**
  * MybatisPlus配置
  *
- * @author ican
+ * @author Dduo
  */
 @Configuration
 @MapperScan("com.ican.mapper")

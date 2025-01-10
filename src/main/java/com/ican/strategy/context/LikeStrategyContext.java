@@ -10,7 +10,7 @@ import java.util.Map;
 /**
  * 点赞策略上下文
  *
- * @author ican
+ * @author Dduo
  */
 @Service
 public class LikeStrategyContext {

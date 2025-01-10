@@ -24,7 +24,7 @@
 ///**
 // * ES搜索策略
 // *
-// * @author ican
+// * @author Dduo
 // */
 //@Log4j2
 //@Service("esSearchStrategyImpl")
