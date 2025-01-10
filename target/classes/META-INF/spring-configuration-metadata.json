@@ -1,0 +1,264 @@
+{
+  "groups": [
+    {
+      "name": "oauth.gitee",
+      "type": "com.ican.config.properties.GiteeProperties",
+      "sourceType": "com.ican.config.properties.GiteeProperties"
+    },
+    {
+      "name": "oauth.github",
+      "type": "com.ican.config.properties.GithubProperties",
+      "sourceType": "com.ican.config.properties.GithubProperties"
+    },
+    {
+      "name": "oauth.qq",
+      "type": "com.ican.config.properties.QqProperties",
+      "sourceType": "com.ican.config.properties.QqProperties"
+    },
+    {
+      "name": "thread.pool",
+      "type": "com.ican.config.properties.ThreadPoolProperties",
+      "sourceType": "com.ican.config.properties.ThreadPoolProperties"
+    },
+    {
+      "name": "upload.cos",
+      "type": "com.ican.config.properties.CosProperties",
+      "sourceType": "com.ican.config.properties.CosProperties"
+    },
+    {
+      "name": "upload.oss",
+      "type": "com.ican.config.properties.OssProperties",
+      "sourceType": "com.ican.config.properties.OssProperties"
+    },
+    {
+      "name": "upload.qiniu",
+      "type": "com.ican.config.properties.QiniuProperties",
+      "sourceType": "com.ican.config.properties.QiniuProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "oauth.gitee.access-token-url",
+      "type": "java.lang.String",
+      "description": "Gitee访问令牌地址",
+      "sourceType": "com.ican.config.properties.GiteeProperties"
+    },
+    {
+      "name": "oauth.gitee.client-id",
+      "type": "java.lang.String",
+      "description": "clientId",
+      "sourceType": "com.ican.config.properties.GiteeProperties"
+    },
+    {
+      "name": "oauth.gitee.client-secret",
+      "type": "java.lang.String",
+      "description": "clientSecret",
+      "sourceType": "com.ican.config.properties.GiteeProperties"
+    },
+    {
+      "name": "oauth.gitee.grant-type",
+      "type": "java.lang.String",
+      "description": "Gitee登录类型",
+      "sourceType": "com.ican.config.properties.GiteeProperties"
+    },
+    {
+      "name": "oauth.gitee.redirect-uri",
+      "type": "java.lang.String",
+      "description": "Gitee回调域名",
+      "sourceType": "com.ican.config.properties.GiteeProperties"
+    },
+    {
+      "name": "oauth.gitee.user-info-url",
+      "type": "java.lang.String",
+      "description": "Gitee用户信息地址",
+      "sourceType": "com.ican.config.properties.GiteeProperties"
+    },
+    {
+      "name": "oauth.github.access-token-url",
+      "type": "java.lang.String",
+      "description": "Github访问令牌地址",
+      "sourceType": "com.ican.config.properties.GithubProperties"
+    },
+    {
+      "name": "oauth.github.client-id",
+      "type": "java.lang.String",
+      "description": "clientId",
+      "sourceType": "com.ican.config.properties.GithubProperties"
+    },
+    {
+      "name": "oauth.github.client-secret",
+      "type": "java.lang.String",
+      "description": "clientSecret",
+      "sourceType": "com.ican.config.properties.GithubProperties"
+    },
+    {
+      "name": "oauth.github.redirect-url",
+      "type": "java.lang.String",
+      "description": "Github回调域名",
+      "sourceType": "com.ican.config.properties.GithubProperties"
+    },
+    {
+      "name": "oauth.github.user-info-url",
+      "type": "java.lang.String",
+      "description": "Github用户信息地址",
+      "sourceType": "com.ican.config.properties.GithubProperties"
+    },
+    {
+      "name": "oauth.qq.access-token-url",
+      "type": "java.lang.String",
+      "description": "QQ访问令牌地址",
+      "sourceType": "com.ican.config.properties.QqProperties"
+    },
+    {
+      "name": "oauth.qq.app-id",
+      "type": "java.lang.String",
+      "description": "QQ appId",
+      "sourceType": "com.ican.config.properties.QqProperties"
+    },
+    {
+      "name": "oauth.qq.app-key",
+      "type": "java.lang.String",
+      "description": "QQ clientSecret",
+      "sourceType": "com.ican.config.properties.QqProperties"
+    },
+    {
+      "name": "oauth.qq.grant-type",
+      "type": "java.lang.String",
+      "description": "QQ登录类型",
+      "sourceType": "com.ican.config.properties.QqProperties"
+    },
+    {
+      "name": "oauth.qq.redirect-url",
+      "type": "java.lang.String",
+      "description": "QQ回调域名",
+      "sourceType": "com.ican.config.properties.QqProperties"
+    },
+    {
+      "name": "oauth.qq.user-info-url",
+      "type": "java.lang.String",
+      "description": "QQ用户信息地址",
+      "sourceType": "com.ican.config.properties.QqProperties"
+    },
+    {
+      "name": "oauth.qq.user-open-id-url",
+      "type": "java.lang.String",
+      "description": "用户OpenID获取地址",
+      "sourceType": "com.ican.config.properties.QqProperties"
+    },
+    {
+      "name": "thread.pool.core-pool-size",
+      "type": "java.lang.Integer",
+      "description": "核心线程池大小",
+      "sourceType": "com.ican.config.properties.ThreadPoolProperties"
+    },
+    {
+      "name": "thread.pool.keep-alive-seconds",
+      "type": "java.lang.Integer",
+      "description": "线程池维护线程所允许的空闲时间",
+      "sourceType": "com.ican.config.properties.ThreadPoolProperties"
+    },
+    {
+      "name": "thread.pool.max-pool-size",
+      "type": "java.lang.Integer",
+      "description": "最大可创建的线程数",
+      "sourceType": "com.ican.config.properties.ThreadPoolProperties"
+    },
+    {
+      "name": "thread.pool.queue-capacity",
+      "type": "java.lang.Integer",
+      "description": "队列最大长度",
+      "sourceType": "com.ican.config.properties.ThreadPoolProperties"
+    },
+    {
+      "name": "upload.cos.bucket-name",
+      "type": "java.lang.String",
+      "description": "存储桶名称",
+      "sourceType": "com.ican.config.properties.CosProperties"
+    },
+    {
+      "name": "upload.cos.region",
+      "type": "java.lang.String",
+      "description": "所属区域",
+      "sourceType": "com.ican.config.properties.CosProperties"
+    },
+    {
+      "name": "upload.cos.secret-id",
+      "type": "java.lang.String",
+      "description": "访问密钥id",
+      "sourceType": "com.ican.config.properties.CosProperties"
+    },
+    {
+      "name": "upload.cos.secret-key",
+      "type": "java.lang.String",
+      "description": "访问密钥密码",
+      "sourceType": "com.ican.config.properties.CosProperties"
+    },
+    {
+      "name": "upload.cos.url",
+      "type": "java.lang.String",
+      "description": "cos域名",
+      "sourceType": "com.ican.config.properties.CosProperties"
+    },
+    {
+      "name": "upload.oss.access-key-id",
+      "type": "java.lang.String",
+      "description": "访问密钥id",
+      "sourceType": "com.ican.config.properties.OssProperties"
+    },
+    {
+      "name": "upload.oss.access-key-secret",
+      "type": "java.lang.String",
+      "description": "访问密钥密码",
+      "sourceType": "com.ican.config.properties.OssProperties"
+    },
+    {
+      "name": "upload.oss.bucket-name",
+      "type": "java.lang.String",
+      "description": "bucket名称",
+      "sourceType": "com.ican.config.properties.OssProperties"
+    },
+    {
+      "name": "upload.oss.endpoint",
+      "type": "java.lang.String",
+      "description": "终点",
+      "sourceType": "com.ican.config.properties.OssProperties"
+    },
+    {
+      "name": "upload.oss.url",
+      "type": "java.lang.String",
+      "description": "oss域名",
+      "sourceType": "com.ican.config.properties.OssProperties"
+    },
+    {
+      "name": "upload.qiniu.access-key",
+      "type": "java.lang.String",
+      "description": "accessKey",
+      "sourceType": "com.ican.config.properties.QiniuProperties"
+    },
+    {
+      "name": "upload.qiniu.bucket-name",
+      "type": "java.lang.String",
+      "description": "存储桶名字",
+      "sourceType": "com.ican.config.properties.QiniuProperties"
+    },
+    {
+      "name": "upload.qiniu.region",
+      "type": "java.lang.String",
+      "description": "\/\/区域 如huanan hubei",
+      "sourceType": "com.ican.config.properties.QiniuProperties"
+    },
+    {
+      "name": "upload.qiniu.secret-key",
+      "type": "java.lang.String",
+      "description": "secretKey",
+      "sourceType": "com.ican.config.properties.QiniuProperties"
+    },
+    {
+      "name": "upload.qiniu.url",
+      "type": "java.lang.String",
+      "description": "url 或者 域名",
+      "sourceType": "com.ican.config.properties.QiniuProperties"
+    }
+  ],
+  "hints": []
+}
