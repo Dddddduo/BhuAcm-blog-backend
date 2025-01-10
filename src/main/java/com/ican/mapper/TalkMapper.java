@@ -15,7 +15,7 @@ import java.util.List;
 /**
  * 说说 Mapper
  *
- * @author ican
+ * @author Dduo
  */
 @Repository
 public interface TalkMapper extends BaseMapper<Talk> {

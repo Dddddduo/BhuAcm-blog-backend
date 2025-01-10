@@ -35,7 +35,7 @@ import java.util.stream.Collectors;
 /**
  * 评论服务
  *
- * @author ican
+ * @author Dduo
  */
 @Service
 public class CommentService extends ServiceImpl<CommentMapper, Comment> {

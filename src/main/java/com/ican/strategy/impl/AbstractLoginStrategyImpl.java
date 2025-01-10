@@ -19,7 +19,7 @@ import java.util.Objects;
 /**
  * 抽象登录模板
  *
- * @author ican
+ * @author Dduo
  */
 @Service
 public abstract class AbstractLoginStrategyImpl implements SocialLoginStrategy {

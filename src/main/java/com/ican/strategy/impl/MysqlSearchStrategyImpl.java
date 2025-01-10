@@ -15,7 +15,7 @@ import java.util.stream.Collectors;
 /**
  * MySQL搜索策略
  *
- * @author ican
+ * @author Dduo
  */
 @Service("mySqlSearchStrategyImpl")
 public class MysqlSearchStrategyImpl implements SearchStrategy {

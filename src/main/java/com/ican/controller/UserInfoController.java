@@ -21,7 +21,7 @@ import javax.servlet.http.HttpServletRequest;
 /**
  * 用户信息控制器
  *
- * @author ican
+ * @author Dduo
  **/
 @Api(tags = "用户信息模块")
 @RestController

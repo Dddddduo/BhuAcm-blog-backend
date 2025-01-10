@@ -31,7 +31,7 @@ import static com.ican.constant.OptTypeConstant.*;
 /**
  * 说说控制器
  *
- * @author ican
+ * @author Dduo
  **/
 @Api(tags = "说说模块")
 @RestController

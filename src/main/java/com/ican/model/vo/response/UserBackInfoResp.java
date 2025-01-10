@@ -10,8 +10,8 @@ import java.util.List;
 /**
  * 后台登录用户信息Response
  *
- * @author ican
- * @date 2022/12/05 16:10
+ * @author Dduo
+ * @date 2024/12/05 16:10
  **/
 @Data
 @Builder

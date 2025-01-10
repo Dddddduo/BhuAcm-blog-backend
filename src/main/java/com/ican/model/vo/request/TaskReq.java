@@ -11,7 +11,7 @@ import javax.validation.constraints.NotBlank;
 /**
  * 定时任务Request
  *
- * @author ican
+ * @author Dduo
  */
 @Data
 @NoArgsConstructor

@@ -24,7 +24,7 @@ import static com.ican.constant.OptTypeConstant.*;
 /**
  * 定时任务控制器
  *
- * @author ican
+ * @author Dduo
  */
 @Api(tags = "定时任务模块")
 @RestController

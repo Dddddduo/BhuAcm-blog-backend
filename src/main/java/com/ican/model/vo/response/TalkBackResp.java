@@ -11,7 +11,7 @@ import java.util.List;
 /**
  * 说说后台Response
  *
- * @author ican
+ * @author Dduo
  */
 @Data
 @ApiModel(description = "说说后台Response")

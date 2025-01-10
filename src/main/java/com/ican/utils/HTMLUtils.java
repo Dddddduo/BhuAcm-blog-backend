@@ -5,7 +5,7 @@ import com.github.houbb.sensitive.word.bs.SensitiveWordBs;
 /**
  * HTML工具
  *
- * @author ican
+ * @author Dduo
  */
 @SuppressWarnings(value = "all")
 public class HTMLUtils {

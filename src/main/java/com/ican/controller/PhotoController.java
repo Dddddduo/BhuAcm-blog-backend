@@ -28,8 +28,8 @@ import static com.ican.constant.OptTypeConstant.*;
 /**
  * 照片控制器
  *
- * @author ican
- * @date 2022/12/30 16:35
+ * @author Dduo
+ * @date 2024/12/30 16:35
  **/
 @Api(tags = "照片模块")
 @RestController

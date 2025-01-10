@@ -10,7 +10,7 @@ import java.util.Set;
 /**
  * 用户登录信息Response
  *
- * @author ican
+ * @author Dduo
  **/
 @Data
 @Builder

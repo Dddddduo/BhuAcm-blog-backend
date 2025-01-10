@@ -10,8 +10,8 @@ import lombok.NoArgsConstructor;
 /**
  * 角色菜单
  *
- * @author ican
- * @date 2022/11/29 22:13
+ * @author Dduo
+ * @date 2024/11/29 22:13
  **/
 @Data
 @Builder

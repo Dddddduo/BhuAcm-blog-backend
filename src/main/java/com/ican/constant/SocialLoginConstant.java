@@ -3,7 +3,7 @@ package com.ican.constant;
 /**
  * 第三方登录常量
  *
- * @author ican
+ * @author Dduo
  */
 public class SocialLoginConstant {
 

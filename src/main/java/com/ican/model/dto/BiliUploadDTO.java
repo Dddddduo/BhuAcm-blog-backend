@@ -11,7 +11,7 @@ import lombok.NoArgsConstructor;
 /**
  * B站图片上传返回DTO
  *
- * @author ican
+ * @author Dduo
  * @date 2024/06/21 21:43
  **/
 @Data

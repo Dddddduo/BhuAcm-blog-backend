@@ -11,7 +11,7 @@ import java.util.List;
 /**
  * 逻辑删除
  *
- * @author ican
+ * @author Dduo
  */
 @Data
 @ApiModel(description = "逻辑删除")

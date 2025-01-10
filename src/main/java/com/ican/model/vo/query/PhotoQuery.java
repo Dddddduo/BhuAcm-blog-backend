@@ -8,7 +8,7 @@ import lombok.EqualsAndHashCode;
 /**
  * 照片查询条件
  *
- * @author ican
+ * @author Dduo
  * @date 2023/07/29 18:41
  **/
 @Data

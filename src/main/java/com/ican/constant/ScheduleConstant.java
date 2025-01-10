@@ -3,7 +3,7 @@ package com.ican.constant;
 /**
  * 任务调度常量
  *
- * @author ican
+ * @author Dduo
  */
 public class ScheduleConstant {
 

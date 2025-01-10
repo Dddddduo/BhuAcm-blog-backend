@@ -6,7 +6,7 @@ import java.util.List;
 /**
  * 公共工具类
  *
- * @author ican
+ * @author Dduo
  */
 public class CommonUtils {
 

@@ -17,7 +17,7 @@ import javax.mail.internet.MimeMessage;
 /**
  * 邮件服务
  *
- * @author ican
+ * @author Dduo
  **/
 @Slf4j
 @Service

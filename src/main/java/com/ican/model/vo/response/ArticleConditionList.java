@@ -10,7 +10,7 @@ import java.util.List;
 /**
  * 文章条件列表VO
  *
- * @author ican
+ * @author Dduo
  **/
 @Data
 @Builder

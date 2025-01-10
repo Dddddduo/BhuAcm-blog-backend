@@ -26,7 +26,7 @@ import java.util.Objects;
 /**
  * Github登录策略
  *
- * @author ican
+ * @author Dduo
  **/
 @Service("githubLoginStrategyImpl")
 public class GithubLoginStrategyImpl extends AbstractLoginStrategyImpl {

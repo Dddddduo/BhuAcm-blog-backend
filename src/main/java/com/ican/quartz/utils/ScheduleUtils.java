@@ -13,7 +13,7 @@ import static com.ican.constant.CommonConstant.TRUE;
 /**
  * 定时任务工具类
  *
- * @author ican
+ * @author Dduo
  */
 public class ScheduleUtils {
 

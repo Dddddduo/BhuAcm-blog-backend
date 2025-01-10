@@ -14,8 +14,8 @@ import java.time.LocalDateTime;
 /**
  * 分类
  *
- * @author ican
- * @date 2022/12/02 17:36
+ * @author Dduo
+ * @date 2024/12/02 17:36
  **/
 @Data
 @Builder

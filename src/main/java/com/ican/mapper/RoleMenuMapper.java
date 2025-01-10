@@ -10,8 +10,8 @@ import java.util.List;
 /**
  * 角色菜单 Mapper
  *
- * @author ican
- * @date 2022/12/07 11:16
+ * @author Dduo
+ * @date 2024/12/07 11:16
  **/
 @Repository
 public interface RoleMenuMapper extends BaseMapper<RoleMenu> {

@@ -13,7 +13,7 @@ import java.util.List;
 /**
  * 轮播图Mapper
  *
- * @author ican
+ * @author Dduo
  */
 @Repository
 public interface CarouselMapper extends BaseMapper<Carousel> {

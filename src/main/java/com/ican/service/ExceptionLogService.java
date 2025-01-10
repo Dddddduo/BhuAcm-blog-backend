@@ -15,7 +15,7 @@ import java.util.List;
 /**
  * 异常日志服务
  *
- * @author ican
+ * @author Dduo
  */
 @Service
 public class ExceptionLogService extends ServiceImpl<ExceptionLogMapper, ExceptionLog> {

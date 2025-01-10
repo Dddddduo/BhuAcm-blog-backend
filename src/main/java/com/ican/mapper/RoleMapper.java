@@ -13,8 +13,8 @@ import java.util.List;
 /**
  * 角色 Mapper
  *
- * @author ican
- * @date 2022/12/01 22:52
+ * @author Dduo
+ * @date 2024/12/01 22:52
  **/
 @Repository
 public interface RoleMapper extends BaseMapper<Role> {

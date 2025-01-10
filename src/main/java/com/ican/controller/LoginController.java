@@ -20,7 +20,7 @@ import org.springframework.web.bind.annotation.RestController;
 /**
  * 登录控制器
  *
- * @author ican
+ * @author Dduo
  */
 @Api(tags = "登录模块")
 @RestController

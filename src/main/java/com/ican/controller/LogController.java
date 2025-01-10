@@ -26,7 +26,7 @@ import java.util.List;
 /**
  * 日志控制器
  *
- * @author ican
+ * @author Dduo
  */
 @Api(tags = "日志模块")
 @RestController

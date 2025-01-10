@@ -25,7 +25,7 @@ import static com.ican.enums.ZoneEnum.SHANGHAI;
 /**
  * 自定义侦听器的实现
  *
- * @author ican
+ * @author Dduo
  */
 @Component
 public class MySaTokenListener implements SaTokenListener {

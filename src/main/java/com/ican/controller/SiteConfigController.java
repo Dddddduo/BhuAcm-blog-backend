@@ -18,7 +18,7 @@ import static com.ican.constant.OptTypeConstant.UPLOAD;
 /**
  * 网站配置控制器
  *
- * @author ican
+ * @author Dduo
  **/
 @Api(tags = "网站配置模块")
 @RestController

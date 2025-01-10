@@ -7,7 +7,7 @@ import lombok.Data;
 /**
  * 轮播图Response
  *
- * @author ican
+ * @author Dduo
  * @date 2024/02/07 11:27
  **/
 @Data

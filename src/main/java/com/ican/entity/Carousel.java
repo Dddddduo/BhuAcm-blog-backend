@@ -14,7 +14,7 @@ import java.time.LocalDateTime;
 /**
  * 轮播图
  *
- * @author ican
+ * @author Dduo
  */
 @Data
 @Builder

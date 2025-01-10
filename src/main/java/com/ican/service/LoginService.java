@@ -32,8 +32,8 @@ import java.util.concurrent.TimeUnit;
 /**
  * 登录服务
  *
- * @author ican
- * @date 2022/12/04 11:24
+ * @author Dduo
+ * @date 2024/12/04 11:24
  **/
 @Service
 public class LoginService {

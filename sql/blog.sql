@@ -80,7 +80,7 @@ CREATE TABLE `t_article`
 -- ----------------------------
 INSERT INTO `t_article`
 VALUES (61, 1, 50, 'https://static.ttkwsd.top/article/d6a00d059a1e9729e763469deb4870df.jpg', '2023-02-22', '文章摘要',
-        '# 字符效果\n\n- ~~删除线~~ <s>删除线（开启识别 HTML 标签时）</s>\n\n- _斜体字_ _斜体字_\n- **粗体** **粗体**\n- **_粗斜体_** **_粗斜体_**\n\n- 上标：X<sub>2</sub>，下标：O<sup>2</sup>\n\n- ==高亮==\n\n- `Inline Code`\n\n> 引用：如果想要插入空白换行（即 `<br>` 标签），在插入处先键入两个以上的空格然后回车即可\n\n# 超链接\n\n- [普通链接](https://www.ttkwsd.top)\n- [_斜体链接_](https://www.ttkwsd.top)\n- [**粗体链接**](https://www.ttkwsd.top)\n\n# 脚注\n\n这是一个简单的脚注 [^1] 而这是一个更长的脚注 [^bignote].\n\n[^1]: 这是第一个脚注.\n[^bignote]: 这是一个非常长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长的脚注.\n\n# 图像\n\n下面是一张我家硝子的壁纸?:\n![硝子1](https://i.niupic.com/images/2022/03/11/9Wl7.jpg)\n再来一张好了?：\n![硝子2](https://i.niupic.com/images/2022/03/12/9Wme.jpg)\n\n# 代码\n\n## 行内代码\n\n在 VS Code 中按下 <kbd>Alt</kbd> + <kbd>T</kbd> + <kbd>R</kbd> 执行命令：`npm install marked`\n\n## 代码片\n\n### Python 代码\n\n```python\nclass Animal:\n    \"\"\" 动物类 \"\"\"\n\n    def __init__(self, age: int, name: str):\n        self.age = age\n        self.name = name\n\n    def getInfo(self) -> str:\n        \"\"\" 返回信息 \"\"\"\n        return f\'age: {self.age};
+        '# 字符效果\n\n- ~~删除线~~ <s>删除线（开启识别 HTML 标签时）</s>\n\n- _斜体字_ _斜体字_\n- **粗体** **粗体**\n- **_粗斜体_** **_粗斜体_**\n\n- 上标：X<sub>2</sub>，下标：O<sup>2</sup>\n\n- ==高亮==\n\n- `Inline Code`\n\n> 引用：如果想要插入空白换行（即 `<br>` 标签），在插入处先键入两个以上的空格然后回车即可\n\n# 超链接\n\n- [普通链接](https://www.ttkwsd.top)\n- [_斜体链接_](https://www.ttkwsd.top)\n- [**粗体链接**](https://www.ttkwsd.top)\n\n# 脚注\n\n这是一个简单的脚注 [^1] 而这是一个更长的脚注 [^bignote].\n\n[^1]: 这是第一个脚注.\n[^bignote]: 这是一个非常长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长长的脚注.\n\n# 图像\n\n下面是一张我家硝子的壁纸?:\n![硝子1](https://i.niupic.com/images/2024/03/11/9Wl7.jpg)\n再来一张好了?：\n![硝子2](https://i.niupic.com/images/2024/03/12/9Wme.jpg)\n\n# 代码\n\n## 行内代码\n\n在 VS Code 中按下 <kbd>Alt</kbd> + <kbd>T</kbd> + <kbd>R</kbd> 执行命令：`npm install marked`\n\n## 代码片\n\n### Python 代码\n\n```python\nclass Animal:\n    \"\"\" 动物类 \"\"\"\n\n    def __init__(self, age: int, name: str):\n        self.age = age\n        self.name = name\n\n    def getInfo(self) -> str:\n        \"\"\" 返回信息 \"\"\"\n        return f\'age: {self.age};
 name
 : {self.name}
 \'\n\n\nclass Dog(Animal):\n    \"\"\" 狗狗类 \"\"\"\n\n    def __init__(self, age: int, name: str, gender=\'female
@@ -319,104 +319,104 @@ CREATE TABLE `t_menu`
 -- Records of t_menu
 -- ----------------------------
 INSERT INTO `t_menu`
-VALUES (1, 0, 'M', '文章管理', 'article', 'archives', '', '', 0, 0, 1, '2022-12-04 09:13:31', '2023-02-21 15:36:45');
+VALUES (1, 0, 'M', '文章管理', 'article', 'archives', '', '', 0, 0, 1, '2024-12-04 09:13:31', '2023-02-21 15:36:45');
 INSERT INTO `t_menu`
 VALUES (3, 1, 'C', '分类管理', 'category', 'category', '/blog/category/index', 'blog:category:list', 0, 0, 3,
-        '2022-12-04 09:22:20', '2023-02-21 15:21:19');
+        '2024-12-04 09:22:20', '2023-02-21 15:21:19');
 INSERT INTO `t_menu`
-VALUES (4, 1, 'C', '标签管理', 'tag', 'tag', '/blog/tag/index', 'blog:tag:list', 0, 0, 4, '2022-12-04 09:23:01',
+VALUES (4, 1, 'C', '标签管理', 'tag', 'tag', '/blog/tag/index', 'blog:tag:list', 0, 0, 4, '2024-12-04 09:23:01',
         '2023-02-21 15:21:23');
 INSERT INTO `t_menu`
-VALUES (5, 3, 'B', '添加分类', NULL, NULL, NULL, 'blog:category:add', 0, 0, 1, '2022-12-04 09:30:55', NULL);
+VALUES (5, 3, 'B', '添加分类', NULL, NULL, NULL, 'blog:category:add', 0, 0, 1, '2024-12-04 09:30:55', NULL);
 INSERT INTO `t_menu`
-VALUES (6, 3, 'B', '删除分类', NULL, NULL, NULL, 'blog:category:delete', 0, 0, 2, '2022-12-04 09:32:15',
-        '2022-12-26 15:39:20');
+VALUES (6, 3, 'B', '删除分类', NULL, NULL, NULL, 'blog:category:delete', 0, 0, 2, '2024-12-04 09:32:15',
+        '2024-12-26 15:39:20');
 INSERT INTO `t_menu`
-VALUES (7, 3, 'B', '修改分类', NULL, NULL, NULL, 'blog:category:update', 0, 0, 3, '2022-12-04 09:33:52', NULL);
+VALUES (7, 3, 'B', '修改分类', NULL, NULL, NULL, 'blog:category:update', 0, 0, 3, '2024-12-04 09:33:52', NULL);
 INSERT INTO `t_menu`
-VALUES (8, 4, 'B', '添加标签', NULL, NULL, '', 'blog:tag:add', 0, 0, 1, '2022-12-04 10:19:51', NULL);
+VALUES (8, 4, 'B', '添加标签', NULL, NULL, '', 'blog:tag:add', 0, 0, 1, '2024-12-04 10:19:51', NULL);
 INSERT INTO `t_menu`
-VALUES (9, 4, 'B', '删除标签', NULL, NULL, NULL, 'blog:tag:delete', 0, 0, 2, '2022-12-04 10:20:41', NULL);
+VALUES (9, 4, 'B', '删除标签', NULL, NULL, NULL, 'blog:tag:delete', 0, 0, 2, '2024-12-04 10:20:41', NULL);
 INSERT INTO `t_menu`
-VALUES (10, 4, 'B', '修改标签', NULL, NULL, NULL, 'blog:tag:update', 0, 0, 3, '2022-12-04 10:21:32', NULL);
+VALUES (10, 4, 'B', '修改标签', NULL, NULL, NULL, 'blog:tag:update', 0, 0, 3, '2024-12-04 10:21:32', NULL);
 INSERT INTO `t_menu`
-VALUES (11, 0, 'M', '系统管理', 'system', 'system', '', '', 0, 0, 3, '2022-12-06 10:58:50', '2023-01-03 18:47:19');
+VALUES (11, 0, 'M', '系统管理', 'system', 'system', '', '', 0, 0, 3, '2024-12-06 10:58:50', '2023-01-03 18:47:19');
 INSERT INTO `t_menu`
 VALUES (12, 11, 'C', '菜单管理', 'menu', 'tree-table', '/system/menu/index', 'system:menu:list', 0, 0, 1,
-        '2022-12-06 16:33:56', NULL);
+        '2024-12-06 16:33:56', NULL);
 INSERT INTO `t_menu`
 VALUES (13, 11, 'C', '角色管理', 'role', 'peoples', '/system/role/index', 'system:role:list', 0, 0, 2,
-        '2022-12-06 17:09:55', NULL);
+        '2024-12-06 17:09:55', NULL);
 INSERT INTO `t_menu`
 VALUES (14, 11, 'C', '用户管理', 'user', 'user', '/system/user/index', 'system:user:list', 0, 0, 3,
-        '2022-12-06 17:10:28', NULL);
+        '2024-12-06 17:10:28', NULL);
 INSERT INTO `t_menu`
-VALUES (15, 12, 'B', '添加菜单', NULL, '', NULL, 'system:menu:add', 0, 0, 1, '2022-12-07 10:50:22', NULL);
+VALUES (15, 12, 'B', '添加菜单', NULL, '', NULL, 'system:menu:add', 0, 0, 1, '2024-12-07 10:50:22', NULL);
 INSERT INTO `t_menu`
-VALUES (16, 12, 'B', '删除菜单', NULL, '', NULL, 'system:menu:delete', 0, 0, 2, '2022-12-07 10:50:54', NULL);
+VALUES (16, 12, 'B', '删除菜单', NULL, '', NULL, 'system:menu:delete', 0, 0, 2, '2024-12-07 10:50:54', NULL);
 INSERT INTO `t_menu`
-VALUES (17, 12, 'B', '修改菜单', NULL, '', NULL, 'system:menu:update', 0, 0, 3, '2022-12-07 10:55:21', NULL);
+VALUES (17, 12, 'B', '修改菜单', NULL, '', NULL, 'system:menu:update', 0, 0, 3, '2024-12-07 10:55:21', NULL);
 INSERT INTO `t_menu`
-VALUES (18, 13, 'B', '添加角色', NULL, NULL, NULL, 'system:role:add', 0, 0, 1, '2022-12-07 10:56:24', NULL);
+VALUES (18, 13, 'B', '添加角色', NULL, NULL, NULL, 'system:role:add', 0, 0, 1, '2024-12-07 10:56:24', NULL);
 INSERT INTO `t_menu`
-VALUES (19, 13, 'B', '删除角色', NULL, NULL, NULL, 'system:role:delete', 0, 0, 2, '2022-12-07 10:56:50', NULL);
+VALUES (19, 13, 'B', '删除角色', NULL, NULL, NULL, 'system:role:delete', 0, 0, 2, '2024-12-07 10:56:50', NULL);
 INSERT INTO `t_menu`
-VALUES (20, 13, 'B', '修改角色', NULL, NULL, NULL, 'system:role:update', 0, 0, 3, '2022-12-07 10:57:15', NULL);
+VALUES (20, 13, 'B', '修改角色', NULL, NULL, NULL, 'system:role:update', 0, 0, 3, '2024-12-07 10:57:15', NULL);
 INSERT INTO `t_menu`
-VALUES (21, 0, 'M', '日志管理', 'log', 'log', '', '', 0, 0, 4, '2022-12-21 17:36:39', '2023-02-21 15:20:13');
+VALUES (21, 0, 'M', '日志管理', 'log', 'log', '', '', 0, 0, 4, '2024-12-21 17:36:39', '2023-02-21 15:20:13');
 INSERT INTO `t_menu`
 VALUES (22, 21, 'C', '操作日志', 'operation', 'form', '/system/log/operation', 'log:operation:list', 0, 0, 1,
-        '2022-12-21 20:14:01', NULL);
+        '2024-12-21 20:14:01', NULL);
 INSERT INTO `t_menu`
 VALUES (23, 21, 'C', '异常日志', 'exception', 'bug', '/system/log/exception', 'log:exception:list', 0, 0, 2,
-        '2022-12-21 20:48:25', NULL);
+        '2024-12-21 20:48:25', NULL);
 INSERT INTO `t_menu`
-VALUES (24, 22, 'B', '删除操作日志', NULL, NULL, NULL, 'log:operation:delete', 0, 0, 1, '2022-12-26 16:43:00', NULL);
+VALUES (24, 22, 'B', '删除操作日志', NULL, NULL, NULL, 'log:operation:delete', 0, 0, 1, '2024-12-26 16:43:00', NULL);
 INSERT INTO `t_menu`
-VALUES (25, 23, 'B', '删除异常日志', NULL, NULL, NULL, 'log:exception:delete', 0, 0, 1, '2022-12-27 13:21:50', NULL);
+VALUES (25, 23, 'B', '删除异常日志', NULL, NULL, NULL, 'log:exception:delete', 0, 0, 1, '2024-12-27 13:21:50', NULL);
 INSERT INTO `t_menu`
-VALUES (26, 0, 'M', '系统监控', 'monitor', 'monitor', NULL, '', 0, 0, 5, '2022-12-27 13:23:29', '2023-01-03 18:47:27');
+VALUES (26, 0, 'M', '系统监控', 'monitor', 'monitor', NULL, '', 0, 0, 5, '2024-12-27 13:23:29', '2023-01-03 18:47:27');
 INSERT INTO `t_menu`
 VALUES (27, 26, 'C', '定时任务', 'task', 'job', '/monitor/task/index', 'monitor:task:list', 0, 0, 2,
-        '2022-12-27 13:26:29', '2023-01-01 21:08:35');
+        '2024-12-27 13:26:29', '2023-01-01 21:08:35');
 INSERT INTO `t_menu`
-VALUES (28, 27, 'B', '添加任务', NULL, NULL, NULL, 'monitor:task:add', 0, 0, 1, '2022-12-27 13:32:42', NULL);
+VALUES (28, 27, 'B', '添加任务', NULL, NULL, NULL, 'monitor:task:add', 0, 0, 1, '2024-12-27 13:32:42', NULL);
 INSERT INTO `t_menu`
-VALUES (29, 27, 'B', '修改任务', NULL, NULL, NULL, 'monitor:task:update', 0, 0, 2, '2022-12-27 13:33:45', NULL);
+VALUES (29, 27, 'B', '修改任务', NULL, NULL, NULL, 'monitor:task:update', 0, 0, 2, '2024-12-27 13:33:45', NULL);
 INSERT INTO `t_menu`
-VALUES (30, 27, 'B', '删除任务', NULL, NULL, NULL, 'monitor:task:delete', 0, 0, 3, '2022-12-27 13:34:29', NULL);
+VALUES (30, 27, 'B', '删除任务', NULL, NULL, NULL, 'monitor:task:delete', 0, 0, 3, '2024-12-27 13:34:29', NULL);
 INSERT INTO `t_menu`
-VALUES (31, 27, 'B', '修改任务状态', NULL, NULL, NULL, 'monitor:task:status', 0, 0, 4, '2022-12-27 13:43:24', NULL);
+VALUES (31, 27, 'B', '修改任务状态', NULL, NULL, NULL, 'monitor:task:status', 0, 0, 4, '2024-12-27 13:43:24', NULL);
 INSERT INTO `t_menu`
-VALUES (32, 27, 'B', '运行任务', NULL, NULL, NULL, 'monitor:task:run', 0, 0, 5, '2022-12-27 13:45:34', NULL);
+VALUES (32, 27, 'B', '运行任务', NULL, NULL, NULL, 'monitor:task:run', 0, 0, 5, '2024-12-27 13:45:34', NULL);
 INSERT INTO `t_menu`
-VALUES (33, 13, 'B', '修改角色状态', NULL, NULL, NULL, 'system:role:status', 0, 0, 4, '2022-12-27 13:46:39', NULL);
+VALUES (33, 13, 'B', '修改角色状态', NULL, NULL, NULL, 'system:role:status', 0, 0, 4, '2024-12-27 13:46:39', NULL);
 INSERT INTO `t_menu`
-VALUES (34, 0, 'M', '网站管理', 'web', 'international', NULL, '', 0, 0, 6, '2022-12-30 17:22:33',
+VALUES (34, 0, 'M', '网站管理', 'web', 'international', NULL, '', 0, 0, 6, '2024-12-30 17:22:33',
         '2023-02-14 09:46:29');
 INSERT INTO `t_menu`
 VALUES (35, 34, 'C', '友链管理', 'friend', 'friend', '/web/friend/index', 'web:friend:list', 0, 0, 1,
-        '2022-12-30 17:33:15', NULL);
+        '2024-12-30 17:33:15', NULL);
 INSERT INTO `t_menu`
-VALUES (36, 0, 'M', '消息管理', 'news', 'email', NULL, '', 0, 0, 2, '2022-12-30 17:50:06', '2022-12-30 18:02:12');
+VALUES (36, 0, 'M', '消息管理', 'news', 'email', NULL, '', 0, 0, 2, '2024-12-30 17:50:06', '2024-12-30 18:02:12');
 INSERT INTO `t_menu`
 VALUES (37, 36, 'C', '留言管理', 'message', 'form', '/news/message/index', 'news:message:list', 0, 0, 2,
-        '2022-12-30 17:58:25', '2022-12-30 18:01:47');
+        '2024-12-30 17:58:25', '2024-12-30 18:01:47');
 INSERT INTO `t_menu`
 VALUES (38, 36, 'C', '评论管理', 'comment', 'comment', '/news/comment/index', 'news:comment:list', 0, 0, 1,
-        '2022-12-30 17:59:37', '2022-12-30 18:03:35');
+        '2024-12-30 17:59:37', '2024-12-30 18:03:35');
 INSERT INTO `t_menu`
-VALUES (39, 35, 'B', '添加友链', NULL, NULL, NULL, 'web:friend:add', 0, 0, 1, '2022-12-30 18:56:22', NULL);
+VALUES (39, 35, 'B', '添加友链', NULL, NULL, NULL, 'web:friend:add', 0, 0, 1, '2024-12-30 18:56:22', NULL);
 INSERT INTO `t_menu`
-VALUES (40, 35, 'B', '删除友链', NULL, NULL, NULL, 'web:friend:delete', 0, 0, 2, '2022-12-30 18:56:42', NULL);
+VALUES (40, 35, 'B', '删除友链', NULL, NULL, NULL, 'web:friend:delete', 0, 0, 2, '2024-12-30 18:56:42', NULL);
 INSERT INTO `t_menu`
-VALUES (41, 35, 'B', '修改友链', NULL, NULL, NULL, 'web:friend:update', 0, 0, 3, '2022-12-30 18:57:08', NULL);
+VALUES (41, 35, 'B', '修改友链', NULL, NULL, NULL, 'web:friend:update', 0, 0, 3, '2024-12-30 18:57:08', NULL);
 INSERT INTO `t_menu`
-VALUES (42, 37, 'B', '删除留言', NULL, NULL, NULL, 'news:message:delete', 0, 0, 1, '2022-12-30 22:05:53', NULL);
+VALUES (42, 37, 'B', '删除留言', NULL, NULL, NULL, 'news:message:delete', 0, 0, 1, '2024-12-30 22:05:53', NULL);
 INSERT INTO `t_menu`
-VALUES (45, 37, 'B', '审核留言', NULL, NULL, NULL, 'news:message:pass', 0, 0, 2, '2022-12-30 22:29:24', NULL);
+VALUES (45, 37, 'B', '审核留言', NULL, NULL, NULL, 'news:message:pass', 0, 0, 2, '2024-12-30 22:29:24', NULL);
 INSERT INTO `t_menu`
-VALUES (46, 34, 'C', '网站配置', 'site', 'example', '/web/site/index', 'web:site:list', 0, 0, 5, '2022-12-31 11:50:45',
+VALUES (46, 34, 'C', '网站配置', 'site', 'example', '/web/site/index', 'web:site:list', 0, 0, 5, '2024-12-31 11:50:45',
         '2023-01-03 18:49:17');
 INSERT INTO `t_menu`
 VALUES (51, 34, 'C', '相册管理', 'album', 'album', '/web/album/index', 'web:album:list', 0, 0, 3, '2023-01-01 18:16:40',
@@ -639,11 +639,11 @@ CREATE TABLE `t_role`
 -- Records of t_role
 -- ----------------------------
 INSERT INTO `t_role`
-VALUES ('1', 'admin', '管理员', 0, '2022-11-03 17:41:57', '2023-03-10 23:12:59');
+VALUES ('1', 'admin', '管理员', 0, '2024-11-03 17:41:57', '2023-03-10 23:12:59');
 INSERT INTO `t_role`
-VALUES ('2', 'user', '普通用户', 0, '2022-11-03 17:42:17', '2023-03-10 23:13:11');
+VALUES ('2', 'user', '普通用户', 0, '2024-11-03 17:42:17', '2023-03-10 23:13:11');
 INSERT INTO `t_role`
-VALUES ('3', 'test', '测试账号', 0, '2022-11-03 17:42:31', '2023-03-10 23:13:17');
+VALUES ('3', 'test', '测试账号', 0, '2024-11-03 17:42:31', '2023-03-10 23:13:17');
 
 -- ----------------------------
 -- Table structure for t_role_menu
@@ -1037,7 +1037,7 @@ VALUES (1, 'https://static.ttkwsd.top/config/7b6f25adc2b9627b8918176888bee3b5.pn
         'https://static.ttkwsd.top/config/0bca52afdb2b9998132355d716390c9f.png', 'Hello World',
         'https://www.ttkwsd.top', '网站介绍',
         '后端基于SpringBoot开发，前端基于Vue3 Ts Navie UI开发，<a href=\"https://gitee.com/wu_shengdong/blog\" style=\"color: #49b1f5;\">网站源码</a>',
-        '2022-08-25', '赣ICP备2022007910号', 'https://static.ttkwsd.top/config/05409c1ed50047535f28a40464f7b1ab.jpg',
+        '2024-08-25', '赣ICP备2022007910号', 'https://static.ttkwsd.top/config/05409c1ed50047535f28a40464f7b1ab.jpg',
         '阿冬', 'https://static.ttkwsd.top/config/d6a00d059a1e9729e763469deb4870df.jpg',
         '🍀个人简介\n\n想进大厂的小白\n\n感谢大佬们的开源精神💖', 'https://github.com/ICAN1999',
         'https://gitee.com/wu_shengdong', 'https://space.bilibili.com/505715511', '1632167813', 0, 0, 1,
@@ -1173,11 +1173,11 @@ CREATE TABLE `t_user`
 INSERT INTO `t_user`
 VALUES (1, '阿冬', 'admin@qq.com', '8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92',
         'https://static.ttkwsd.top/config/9c65807710f54d9d5ad398a78216ebfb.jpg', NULL, NULL, '1632167813@qq.com',
-        '192.168.23.1', '内网IP|内网IP', 1, 0, '2023-03-10 22:26:23', '2022-11-29 21:45:48', '2023-03-10 22:26:23');
+        '192.168.23.1', '内网IP|内网IP', 1, 0, '2023-03-10 22:26:23', '2024-11-29 21:45:48', '2023-03-10 22:26:23');
 INSERT INTO `t_user`
 VALUES (3, '测试账号', 'test@qq.com', '8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92',
         'https://static.ttkwsd.top/config/0bca52afdb2b9998132355d716390c9f.png', 'https://www.ttkwsd.top', '个人简介',
-        'test@qq.com', '192.168.23.1', '内网IP|内网IP', 1, 0, '2023-02-24 10:45:59', '2022-11-30 21:34:26',
+        'test@qq.com', '192.168.23.1', '内网IP|内网IP', 1, 0, '2023-02-24 10:45:59', '2024-11-30 21:34:26',
         '2023-02-24 10:45:59');
 
 -- ----------------------------

@@ -9,7 +9,7 @@ import java.lang.annotation.*;
 /**
  * 评论类型注解
  *
- * @author ican
+ * @author Dduo
  **/
 @Documented
 @Constraint(validatedBy = {EnumValidator.class})

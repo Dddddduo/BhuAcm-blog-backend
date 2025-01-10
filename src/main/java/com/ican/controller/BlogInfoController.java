@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RestController;
 /**
  * 博客控制器
  *
- * @author ican
+ * @author Dduo
  **/
 @Api(tags = "博客模块")
 @RestController

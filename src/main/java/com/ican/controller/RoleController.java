@@ -23,8 +23,8 @@ import static com.ican.constant.OptTypeConstant.*;
 /**
  * 角色控制器
  *
- * @author ican
- * @date 2022/12/05 09:58
+ * @author Dduo
+ * @date 2024/12/05 09:58
  **/
 @Api(tags = "角色模块")
 @RestController

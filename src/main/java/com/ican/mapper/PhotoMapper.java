@@ -13,7 +13,7 @@ import java.util.List;
 /**
  * 照片 Mapper
  *
- * @author ican
+ * @author Dduo
  */
 @Repository
 public interface PhotoMapper extends BaseMapper<Photo> {

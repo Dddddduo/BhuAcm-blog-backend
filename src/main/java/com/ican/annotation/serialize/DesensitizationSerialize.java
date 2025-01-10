@@ -19,7 +19,7 @@ import java.util.Objects;
 /**
  * 脱敏序列化类
  *
- * @author ican
+ * @author Dduo
  * @date 2024/01/14 16:11
  * @see <a href="https://juejin.cn/post/7265630149324144674">脱敏</a>
  **/

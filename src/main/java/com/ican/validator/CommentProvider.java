@@ -16,7 +16,7 @@ import static com.ican.enums.CommentTypeEnum.*;
 /**
  * 评论分组校验器
  *
- * @author ican
+ * @author Dduo
  **/
 public class CommentProvider implements DefaultGroupSequenceProvider<CommentReq> {
     @Override

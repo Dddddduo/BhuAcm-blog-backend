@@ -13,7 +13,7 @@ import java.util.Objects;
 /**
  * 文件md5工具类
  *
- * @author ican
+ * @author Dduo
  */
 @Slf4j
 public class FileUtils {

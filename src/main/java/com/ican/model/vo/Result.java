@@ -10,7 +10,7 @@ import static com.ican.enums.StatusCodeEnum.SUCCESS;
 /**
  * 结果返回类
  *
- * @author ican
+ * @author Dduo
  */
 @Data
 @ApiModel(description = "结果返回类")

@@ -17,7 +17,7 @@ import static com.ican.enums.StatusCodeEnum.*;
 /**
  * 全局异常处理
  *
- * @author ican
+ * @author Dduo
  */
 @RestControllerAdvice
 public class GlobalExceptionHandler {

@@ -7,7 +7,7 @@ import org.springframework.stereotype.Repository;
 /**
  * 聊天记录 Mapper
  *
- * @author ican
+ * @author Dduo
  * @date 2023/06/12 10:55
  **/
 @Repository

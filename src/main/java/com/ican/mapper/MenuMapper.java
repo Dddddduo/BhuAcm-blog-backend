@@ -16,8 +16,8 @@ import java.util.List;
 /**
  * 菜单 Mapper
  *
- * @author ican
- * @date 2022/12/04 16:24
+ * @author Dduo
+ * @date 2024/12/04 16:24
  **/
 @Repository
 public interface MenuMapper extends BaseMapper<Menu> {

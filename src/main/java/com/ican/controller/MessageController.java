@@ -26,7 +26,7 @@ import static com.ican.constant.OptTypeConstant.UPDATE;
 /**
  * 留言控制器
  *
- * @author ican
+ * @author Dduo
  */
 @Api(tags = "留言模块")
 @RestController

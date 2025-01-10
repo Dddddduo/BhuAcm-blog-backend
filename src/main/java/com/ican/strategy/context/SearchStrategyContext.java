@@ -14,7 +14,7 @@ import static com.ican.enums.SearchModeEnum.getStrategy;
 /**
  * 搜索策略上下文
  *
- * @author ican
+ * @author Dduo
  */
 @Service
 public class SearchStrategyContext {

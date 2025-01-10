@@ -7,8 +7,8 @@ import lombok.Data;
 /**
  * 后台照片Response
  *
- * @author ican
- * @date 2022/12/30 20:56
+ * @author Dduo
+ * @date 2024/12/30 20:56
  **/
 @Data
 @ApiModel(description = "后台照片Response")

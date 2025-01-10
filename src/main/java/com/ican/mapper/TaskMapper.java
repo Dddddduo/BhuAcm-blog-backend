@@ -12,7 +12,7 @@ import java.util.List;
 /**
  * 定时任务 Mapper
  *
- * @author ican
+ * @author Dduo
  */
 @Repository
 public interface TaskMapper extends BaseMapper<Task> {

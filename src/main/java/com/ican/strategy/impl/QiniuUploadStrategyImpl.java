@@ -14,7 +14,7 @@ import java.io.InputStream;
 /**
  * qiniu上传策略
  *
- * @author ican
+ * @author Dduo
  */
 @Slf4j
 @Service("qiniuUploadStrategyImpl")

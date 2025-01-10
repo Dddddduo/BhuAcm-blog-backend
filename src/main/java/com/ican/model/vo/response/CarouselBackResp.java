@@ -9,7 +9,7 @@ import java.time.LocalDateTime;
 /**
  * 轮播图后台Response
  *
- * @author ican
+ * @author Dduo
  * @date 2024/02/03 12:11
  **/
 @Data

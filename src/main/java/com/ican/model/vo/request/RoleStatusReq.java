@@ -9,8 +9,8 @@ import javax.validation.constraints.NotNull;
 /**
  * 角色状态Request
  *
- * @author ican
- * @date 2022/12/19 10:31
+ * @author Dduo
+ * @date 2024/12/19 10:31
  **/
 @Data
 @ApiModel(description = "角色状态Request")

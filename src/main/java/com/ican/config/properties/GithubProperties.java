@@ -7,7 +7,7 @@ import org.springframework.context.annotation.Configuration;
 /**
  * Github配置属性
  *
- * @author ican
+ * @author Dduo
  */
 @Data
 @Configuration

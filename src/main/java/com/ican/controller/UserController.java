@@ -26,8 +26,8 @@ import static com.ican.constant.OptTypeConstant.UPDATE;
 /**
  * 用户控制器
  *
- * @author ican
- * @date 2022/12/05 10:03
+ * @author Dduo
+ * @date 2024/12/05 10:03
  **/
 @Api(tags = "用户模块")
 @RestController

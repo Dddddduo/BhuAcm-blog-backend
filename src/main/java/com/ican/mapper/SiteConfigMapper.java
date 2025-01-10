@@ -7,7 +7,7 @@ import org.springframework.stereotype.Repository;
 /**
  * 网站配置 Mapper
  *
- * @author ican
+ * @author Dduo
  */
 @Repository
 public interface SiteConfigMapper extends BaseMapper<SiteConfig> {

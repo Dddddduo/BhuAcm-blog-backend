@@ -13,7 +13,7 @@ import java.util.List;
 /**
  * 友链 Mapper
  *
- * @author ican
+ * @author Dduo
  */
 @Repository
 public interface FriendMapper extends BaseMapper<Friend> {

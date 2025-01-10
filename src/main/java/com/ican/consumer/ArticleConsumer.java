@@ -21,7 +21,7 @@
 ///**
 // * 文章消费者
 // *
-// * @author ican
+// * @author Dduo
 // **/
 //@Component
 //public class ArticleConsumer {

@@ -22,8 +22,8 @@ import static com.ican.constant.OptTypeConstant.*;
 /**
  * 菜单控制器
  *
- * @author ican
- * @date 2022/12/05 09:57
+ * @author Dduo
+ * @date 2024/12/05 09:57
  **/
 @Api(tags = "菜单模块")
 @RestController

@@ -8,8 +8,8 @@ import lombok.EqualsAndHashCode;
 /**
  * 相册后台Response
  *
- * @author ican
- * @date 2022/12/30 16:06
+ * @author Dduo
+ * @date 2024/12/30 16:06
  **/
 @Data
 @EqualsAndHashCode(callSuper = true)

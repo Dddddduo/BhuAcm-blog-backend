@@ -12,7 +12,7 @@ import java.util.List;
 /**
  * 操作日志 Mapper
  *
- * @author ican
+ * @author Dduo
  */
 @Repository
 public interface OperationLogMapper extends BaseMapper<OperationLog> {

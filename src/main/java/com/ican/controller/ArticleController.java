@@ -31,7 +31,7 @@ import static com.ican.constant.OptTypeConstant.*;
 /**
  * 文章控制器
  *
- * @author ican
+ * @author Dduo
  **/
 @Api(tags = "文章模块")
 @RestController

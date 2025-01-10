@@ -5,7 +5,7 @@ import lombok.Data;
 /**
  * QQ token信息
  *
- * @author ican
+ * @author Dduo
  * @date 2023/04/06 23:31
  **/
 @Data

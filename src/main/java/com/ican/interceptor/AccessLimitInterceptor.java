@@ -23,7 +23,7 @@ import java.util.concurrent.TimeUnit;
 /**
  * Redis拦截器
  *
- * @author ican
+ * @author Dduo
  */
 @Slf4j
 @Component

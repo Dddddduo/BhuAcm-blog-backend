@@ -13,8 +13,8 @@ import java.util.List;
 /**
  * 分类 Mapper
  *
- * @author ican
- * @date 2022/12/02 17:34
+ * @author Dduo
+ * @date 2024/12/02 17:34
  **/
 @Repository
 public interface CategoryMapper extends BaseMapper<Category> {

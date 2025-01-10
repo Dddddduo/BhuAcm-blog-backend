@@ -11,8 +11,8 @@ import java.util.List;
 /**
  * 菜单下拉树Response
  *
- * @author ican
- * @date 2022/12/07 17:07
+ * @author Dduo
+ * @date 2024/12/07 17:07
  **/
 @Data
 @ApiModel(description = "菜单下拉树Response")

@@ -20,7 +20,7 @@ import java.io.InputStream;
 /**
  * cos上传策略
  *
- * @author ican
+ * @author Dduo
  */
 @Slf4j
 @Service("cosUploadStrategyImpl")

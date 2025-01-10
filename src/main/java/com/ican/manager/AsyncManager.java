@@ -11,7 +11,7 @@ import java.util.concurrent.TimeUnit;
 /**
  * 异步任务管理器
  *
- * @author ican
+ * @author Dduo
  */
 public class AsyncManager {
 

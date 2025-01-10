@@ -6,7 +6,7 @@ import lombok.Getter;
 /**
  * 时区枚举
  *
- * @author ican
+ * @author Dduo
  */
 @Getter
 @AllArgsConstructor

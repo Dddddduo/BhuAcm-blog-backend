@@ -14,7 +14,7 @@ import java.util.List;
 /**
  * 定时任务日志服务
  *
- * @author ican
+ * @author Dduo
  */
 @Service
 public class TaskLogService extends ServiceImpl<TaskLogMapper, TaskLog> {

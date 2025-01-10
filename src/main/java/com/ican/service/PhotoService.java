@@ -30,7 +30,7 @@ import java.util.stream.Collectors;
 /**
  * 照片业务接口实现类
  *
- * @author ican
+ * @author Dduo
  */
 @Service
 public class PhotoService extends ServiceImpl<PhotoMapper, Photo> {

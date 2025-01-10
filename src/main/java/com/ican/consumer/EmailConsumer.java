@@ -16,7 +16,7 @@
 ///**
 // * 邮件消费者
 // *
-// * @author ican
+// * @author Dduo
 // */
 //@Component
 //public class EmailConsumer {

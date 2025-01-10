@@ -10,8 +10,8 @@ import javax.validation.constraints.Size;
 /**
  * 登录信息Request
  *
- * @author ican
- * @date 2022/12/04 11:17
+ * @author Dduo
+ * @date 2024/12/04 11:17
  **/
 @Data
 @ApiModel(description = "登录信息Request")

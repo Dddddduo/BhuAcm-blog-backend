@@ -7,7 +7,7 @@ import lombok.Data;
 /**
  * QQ登录DTO
  *
- * @author ican
+ * @author Dduo
  * @date 2023/04/06 23:30
  **/
 @Data

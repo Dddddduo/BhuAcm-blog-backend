@@ -16,7 +16,7 @@ import java.util.List;
 /**
  * 操作日志业务接口实现类
  *
- * @author ican
+ * @author Dduo
  */
 @Service
 public class OperationLogService extends ServiceImpl<OperationLogMapper, OperationLog> {

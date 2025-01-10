@@ -14,7 +14,7 @@ import java.time.LocalDateTime;
 /**
  * 聊天记录
  *
- * @author ican
+ * @author Dduo
  * @date 2023/06/12 10:40
  **/
 @Data

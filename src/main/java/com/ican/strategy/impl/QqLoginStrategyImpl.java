@@ -21,7 +21,7 @@ import java.util.Objects;
 /**
  * Qq登录策略
  *
- * @author ican
+ * @author Dduo
  * @date 2023/04/06 18:43
  **/
 @Slf4j
