@@ -1,34 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="AutoImportSettings">
-    <option name="autoReloadType" value="SELECTIVE" />
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="f3efd016-e5d7-4c4e-b7a1-acb671bfcc6b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.cache/.Apifox_Helper/.toolWindow.db" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.cache/.Apifox_Helper/.toolWindow.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ican/controller/TalkController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ican/controller/TalkController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ican/controller/UserInfoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ican/controller/UserInfoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ican/satoken/SaTokenConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ican/satoken/SaTokenConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ican/service/LoginService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ican/service/LoginService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ican/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ican/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application-dev.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/blog-springboot-2.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/blog-springboot-2.0.jar.original" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/spring-configuration-metadata.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/META-INF/spring-configuration-metadata.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application-dev.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ican/config/ThreadPoolConfig$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ican/config/ThreadPoolConfig$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ican/controller/TalkController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ican/controller/TalkController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ican/controller/UserInfoController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ican/controller/UserInfoController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ican/interceptor/AccessLimitInterceptor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ican/interceptor/AccessLimitInterceptor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ican/interceptor/PageableInterceptor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ican/interceptor/PageableInterceptor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ican/satoken/SaTokenConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ican/satoken/SaTokenConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ican/service/LoginService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ican/service/LoginService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ican/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ican/service/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-    </list>
+    <list default="true" id="36e6b167-ea4d-41df-aa04-f84ae1eb72c4" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -37,87 +10,54 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "Dddddduo"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Dddddduo&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/Dddddduo/BhuAcm-blog-backend.git",
-    "accountId": "973d5ecf-67ce-432d-b319-0906172f9c1c"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Dddddduo/BhuAcm-blog-backend.git&quot;,
+    &quot;accountId&quot;: &quot;973d5ecf-67ce-432d-b319-0906172f9c1c&quot;
   }
-}]]></component>
+}</component>
+  <component name="KubernetesApiPersistence">{}</component>
   <component name="KubernetesApiProvider">{
   &quot;isMigrated&quot;: true
 }</component>
-  <component name="MarkdownSettingsMigration">
-    <option name="stateVersion" value="1" />
-  </component>
   <component name="ProjectColorInfo">{
-  &quot;customColor&quot;: &quot;&quot;,
-  &quot;associatedIndex&quot;: 1
+  &quot;associatedIndex&quot;: 2
 }</component>
-  <component name="ProjectId" id="2pjlYcYRV0RpXioLZopBmLCgR2v" />
-  <component name="ProjectLevelVcsManager">
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
+  <component name="ProjectId" id="2rRUybKMpVgKB6h5PTJOd1oobBK" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "JAR Application.blog-springboot-2.0.jar.executor": "Run",
-    "Maven.blog-springboot [clean].executor": "Run",
-    "Maven.blog-springboot [package].executor": "Run",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "Spring Boot.BlogApplication.executor": "Run",
-    "checkBoxType": "false",
-    "git-widget-placeholder": "Dduo-202501110-v1",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "E:/idea",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "editor.preferences.fonts.default",
-    "vue.rearranger.settings.migration": "true"
-  },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql_aurora_aws"
-    ]
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;F:/Projects/Java Project&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Git&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
-  <component name="ReactorSettings">
-    <option name="notificationShown" value="true" />
-  </component>
-  <component name="RunManager" selected="Spring Boot.BlogApplication">
-    <configuration name="blog-springboot-2.0.jar" type="JarApplication" temporary="true">
-      <option name="JAR_PATH" value="$PROJECT_DIR$/target/blog-springboot-2.0.jar" />
-      <method v="2" />
-    </configuration>
-    <configuration name="BlogApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <module name="blog-springboot" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ican.BlogApplication" />
+}</component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="BhuAcm-blog-backend" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="JAR Application.blog-springboot-2.0.jar" />
-      </list>
-    </recent_temporary>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="BhuAcm-blog-backend" />
+      <option name="filePath" />
+      <method v="2" />
+    </configuration>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -130,54 +70,16 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="f3efd016-e5d7-4c4e-b7a1-acb671bfcc6b" name="Changes" comment="" />
-      <created>1733287415481</created>
+      <changelist id="36e6b167-ea4d-41df-aa04-f84ae1eb72c4" name="Changes" comment="" />
+      <created>1736521637765</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1733287415481</updated>
-      <workItem from="1733287418274" duration="210000" />
-      <workItem from="1733287649960" duration="612000" />
-      <workItem from="1733288335529" duration="2141000" />
-      <workItem from="1733566795689" duration="5561000" />
-      <workItem from="1733723904302" duration="29848000" />
-      <workItem from="1733989652531" duration="2575000" />
-      <workItem from="1734172301355" duration="8652000" />
-      <workItem from="1734191447827" duration="12472000" />
-      <workItem from="1734391849260" duration="27970000" />
-      <workItem from="1736517942422" duration="363000" />
+      <updated>1736521637765</updated>
+      <workItem from="1736521639273" duration="301000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/ican/service/MessageService.java</url>
-          <line>63</line>
-          <option name="timeStamp" value="18" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/ican/service/ArticleService.java</url>
-          <line>200</line>
-          <option name="timeStamp" value="19" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/ican/service/TalkService.java</url>
-          <line>78</line>
-          <option name="timeStamp" value="39" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/ican/controller/TalkController.java</url>
-          <line>85</line>
-          <option name="timeStamp" value="40" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

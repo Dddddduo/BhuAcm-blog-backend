@@ -12,6 +12,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class BlogApplication {
 
+    // 项目启动入口
     public static void main(String[] args) {
         SpringApplication.run(BlogApplication.class, args);
     }
