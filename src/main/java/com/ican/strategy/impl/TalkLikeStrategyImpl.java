@@ -32,6 +32,7 @@ public class TalkLikeStrategyImpl implements LikeStrategy {
                 .eq(Talk::getId, talkId));
         Assert.notNull(talk, "说说不存在");
 
+        // 有点复杂
         // 用户id作为键，说说id作为值，记录用户点赞记录
         String userLikeTalkKey = RedisConstant.USER_TALK_LIKE + StpUtil.getLoginIdAsInt();
         // 判断是否点赞
