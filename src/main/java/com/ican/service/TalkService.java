@@ -152,7 +152,7 @@ public class TalkService extends ServiceImpl<TalkMapper, Talk> {
             return null;
         }
         // 查询说说点赞量
-        Integer likeCount = redisService.getHash(TALK_LIKE_COUNT, talkId.toString());
+         Integer likeCount = redisService.getHash(TALK_LIKE_COUNT, talkId.toString());
         talkResp.setLikeCount(Optional.ofNullable(likeCount).orElse(0));
         // 转换图片格式
         if (Objects.nonNull(talkResp.getImages())) {
