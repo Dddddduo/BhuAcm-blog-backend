@@ -15,6 +15,8 @@ import java.util.Map;
 @Service
 public class LikeStrategyContext {
 
+    // 策略模式使得算法可以独立于使用它的用户而变化
+
     @Autowired
     private Map<String, LikeStrategy> likeStrategyMap;
 

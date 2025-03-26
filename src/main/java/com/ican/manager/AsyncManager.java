@@ -1,6 +1,5 @@
 package com.ican.manager;
 
-
 import cn.hutool.extra.spring.SpringUtil;
 import com.ican.utils.ThreadUtils;
 
@@ -47,8 +46,6 @@ public class AsyncManager {
     /**
      * 停止任务线程池
      */
-    public void shutdown() {
-        ThreadUtils.shutdownAndAwaitTermination(executor);
-    }
+    public void shutdown() { ThreadUtils.shutdownAndAwaitTermination(executor);}
 
 }
