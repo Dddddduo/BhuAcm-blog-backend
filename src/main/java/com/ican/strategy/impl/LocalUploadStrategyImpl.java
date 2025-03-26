@@ -28,7 +28,9 @@ public class LocalUploadStrategyImpl extends AbstractUploadStrategyImpl {
 
     @Override
     public Boolean exists(String filePath) {
-        return new File(localPath + filePath).exists();
+        File file = new File(localPath + filePath);
+        File absoluteFile = file.getAbsoluteFile();
+        return file.exists();
     }
 
     @Override

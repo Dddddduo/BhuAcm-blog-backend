@@ -44,9 +44,9 @@ spring:
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/blog
-    username: root
-    password: 123456
+    url: jdbc:mysql://182.92.125.34:3306/blog
+    username: blog
+    password: wHSkAfpzpMaZ3W7k
     druid:
       # 初始连接数
       initial-size: 10
@@ -137,17 +137,19 @@ thread:
     max-pool-size: 10
     queue-capacity: 50
     keep-alive-seconds: 60
+
 # 搜索模式 可选 elasticsearch、mysql
 search:
   mode: mysql
+
 # 文件上传策略 local、oss、cos
 upload:
   strategy: local
   local:
     # nginx映射本地文件路径
-    url: https://static.ttkwsd.top/
+    url: http://182.92.125.34/
     # 本地文件存储路径
-    path: /usr/local/upload/
+    path: /www/wwwroot/ACMblog/static/avatar
   # oss存储
   oss:
     url: https://ican2023.oss-cn-hangzhou.aliyuncs.com/

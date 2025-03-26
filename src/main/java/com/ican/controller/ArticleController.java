@@ -48,7 +48,8 @@ public class ArticleController {
      *
      * @param articleQuery 文章查询条件
      * @return {@link Result< ArticleBackResp >} 后台文章列表
-     */
+     *
+     /
     @ApiOperation(value = "查看后台文章列表")
     @SaCheckPermission("blog:article:list")
     @GetMapping("/admin/article/list")
@@ -186,6 +187,7 @@ public class ArticleController {
     @SaCheckPermission("blog:article:like")
     @PostMapping("/article/{articleId}/like")
     public Result<?> likeArticle(@PathVariable("articleId") Integer articleId) {
+        // 策略模式 调用策略上下文 传入参数
         likeStrategyContext.executeLikeStrategy(LikeTypeEnum.ARTICLE, articleId);
         return Result.success();
     }
