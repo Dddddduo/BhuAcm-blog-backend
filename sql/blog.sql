@@ -171,17 +171,21 @@ VALUES (118, 'https://static.ttkwsd.top/config/d6a00d059a1e9729e763469deb4870df.
 -- ----------------------------
 -- Table structure for t_carousel
 -- ----------------------------
-DROP TABLE IF EXISTS `t_carousel`;
-CREATE TABLE `t_carousel`
+DROP TABLE IF EXISTS `t_blog_file`;
+CREATE TABLE `t_blog_file`
 (
-    `id`          int                                                           NOT NULL AUTO_INCREMENT COMMENT '主键',
-    `img_url`     varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL DEFAULT '' COMMENT '轮播图地址',
-    `status`      tinyint(1) NOT NULL DEFAULT 0 COMMENT '是否显示 (0否 1是)',
-    `remark`      varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NULL DEFAULT '' COMMENT '备注',
+    `id`          int                                                           NOT NULL AUTO_INCREMENT COMMENT '文件id',
+    `file_url`    varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NULL DEFAULT NULL COMMENT '文件url',
+    `file_name`   varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL COMMENT '文件名',
+    `file_size`   int                                                           NOT NULL DEFAULT 0 COMMENT '文件大小',
+    `extend_name` varchar(20) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci  NOT NULL DEFAULT '' COMMENT '文件类型',
+    `file_path`   varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL COMMENT '文件路径',
+    `is_dir`      tinyint(1) NOT NULL DEFAULT 0 COMMENT '是否为目录 (0否 1是)',
     `create_time` datetime                                                      NOT NULL COMMENT '创建时间',
     `update_time` datetime NULL DEFAULT NULL COMMENT '更新时间',
     PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 2 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_0900_ai_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB AUTO_INCREMENT = 125 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_0900_ai_ci ROW_FORMAT = Dynamic;
+
 
 -- ----------------------------
 -- Table structure for t_category

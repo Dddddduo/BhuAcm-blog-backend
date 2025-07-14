@@ -107,6 +107,7 @@ public class LoginService {
                 .build();
         // 验证码存入消息队列
 //        rabbitTemplate.convertAndSend(MqConstant.EMAIL_EXCHANGE, MqConstant.EMAIL_SIMPLE_KEY, mailDTO);
+        // 这边改成了线程池的方式发送邮件
         CompletableFuture.runAsync(() -> emailService.sendSimpleMail(mailDTO), threadPoolTaskExecutor);
         // 验证码存入redis
         redisService.setObject(RedisConstant.CODE_KEY + username, code, RedisConstant.CODE_EXPIRE_TIME, TimeUnit.MINUTES);
