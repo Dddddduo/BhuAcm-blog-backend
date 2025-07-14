@@ -48,8 +48,7 @@ public class ArticleController {
      *
      * @param articleQuery 文章查询条件
      * @return {@link Result< ArticleBackResp >} 后台文章列表
-     *
-     /
+     */
     @ApiOperation(value = "查看后台文章列表")
     @SaCheckPermission("blog:article:list")
     @GetMapping("/admin/article/list")

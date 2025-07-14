@@ -2,7 +2,11 @@ server:
   # 地址
   address: 127.0.0.1
   # 端口
-  port: 8080
+  port: 8101
+
+# 自定义配置 deepseek token
+deepseek:
+  api-key: sk-0dedf999de634f04bcd7c15b9c601107
 
 # Sa-Token 配置 (文档: https://sa-token.cc)
 sa-token:
@@ -149,7 +153,7 @@ upload:
     # nginx映射本地文件路径
     url: http://182.92.125.34/
     # 本地文件存储路径
-    path: /www/wwwroot/ACMblog/static/avatar
+    path: /www/wwwroot/ACMblog/static/avatar/
   # oss存储
   oss:
     url: https://ican2023.oss-cn-hangzhou.aliyuncs.com/
