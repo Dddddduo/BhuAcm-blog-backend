@@ -49,8 +49,8 @@ spring:
     type: com.alibaba.druid.pool.DruidDataSource
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://182.92.125.34:3306/blog
-    username: blog
-    password: wHSkAfpzpMaZ3W7k
+    username: root
+    password: 123456
     druid:
       # 初始连接数
       initial-size: 10
