@@ -37,7 +37,15 @@ sa-token:
   # 是否输出操作日志
   is-log: false
 
+
+
 spring:
+  data:
+    mongodb:
+      authentication-database: admin
+      database: blog
+      host: 182.92.125.34
+      port: 27017
   mvc:
     pathmatch:
       matching-strategy: ant_path_matcher
