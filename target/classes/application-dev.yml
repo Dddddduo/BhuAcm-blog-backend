@@ -37,7 +37,19 @@ sa-token:
   # 是否输出操作日志
   is-log: false
 
-
+# 博客数据源, 支持mysql和mongodb, 默认为mysql
+#database:
+#  type: mysql
+#  mongodb:
+#    enabled: false
+# 在现有配置基础上添加以下内容
+# 数据库类型开关配置
+database:
+  # 数据库类型: mysql 或 mongodb
+  type: mysql
+  # MongoDB开关: true开启MongoDB，false使用MySQL
+  mongodb:
+    enabled: false
 
 spring:
   data:
@@ -46,6 +58,19 @@ spring:
       database: blog
       host: 182.92.125.34
       port: 27017
+      # 添加用户名密码配置
+      username: admin
+      password: your_password
+      # 连接池配置
+      connections-per-host: 100
+      threads-allowed-to-block-for-connection-multiplier: 5
+      connect-timeout: 10000
+      max-wait-time: 120000
+      socket-keep-alive: true
+      socket-timeout: 0
+      # 添加URI配置方式（备选）
+      uri: mongodb://admin:your_password@182.92.125.34:27017/blog?authSource=admin
+
   mvc:
     pathmatch:
       matching-strategy: ant_path_matcher

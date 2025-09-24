@@ -1,11 +1,10 @@
 package com.ican;
 
-import com.ican.service.MongoDBService;
+import com.ican.service.MongodbService;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.data.mongodb.core.query.Update;
-import org.springframework.test.context.ActiveProfiles;
 
 import java.util.List;
 import java.util.Set;
@@ -15,7 +14,7 @@ import java.util.Set;
 public class MongodbTest {
 
     @Autowired
-    private MongoDBService mongoDBService;
+    private MongodbService mongoDBService;
 
     // 测试用的数据库和集合名称（避免影响实际数据）
     private static final String TEST_DB = "test_db";

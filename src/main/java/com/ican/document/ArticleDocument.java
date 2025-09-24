@@ -9,9 +9,10 @@ import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.data.mongodb.core.mapping.Field;
 
 import java.time.LocalDateTime;
+import java.util.List;
 
 /**
- * 文章文档
+ * 文章文档（嵌入式标签方案）
  * @author Dduo
  */
 @Document(collection = "article")
@@ -20,85 +21,119 @@ import java.time.LocalDateTime;
 @NoArgsConstructor
 @AllArgsConstructor
 public class ArticleDocument {
-    
+
     @Id
     private String id;
-    
+
     /**
      * 文章作者ID
      */
     @Field("user_id")
     private Integer userId;
-    
+
     /**
      * 文章分类ID
      */
     @Field("category_id")
     private Integer categoryId;
-    
+
     /**
      * 文章缩略图
      */
     @Field("article_cover")
     private String articleCover;
-    
+
     /**
      * 文章标题
      */
     @Field("article_title")
     private String articleTitle;
-    
+
     /**
      * 文章摘要
      */
     @Field("article_desc")
     private String articleDesc;
-    
+
     /**
      * 文章内容
      */
     @Field("article_content")
     private String articleContent;
-    
+
     /**
      * 文章类型 (1原创 2转载 3翻译)
      */
     @Field("article_type")
     private Integer articleType;
-    
+
     /**
      * 是否置顶 (0否 1是)
      */
     @Field("is_top")
     private Integer isTop;
-    
+
     /**
      * 是否删除 (0否 1是)
      */
     @Field("is_delete")
     private Integer isDelete;
-    
+
     /**
      * 是否推荐 (0否 1是)
      */
     @Field("is_recommend")
     private Integer isRecommend;
-    
+
     /**
      * 状态 (1公开 2私密 3草稿)
      */
     @Field("status")
     private Integer status;
-    
+
     /**
      * 发表时间
      */
     @Field("create_time")
     private LocalDateTime createTime;
-    
+
     /**
      * 更新时间
      */
     @Field("update_time")
     private LocalDateTime updateTime;
+
+    /**
+     * 嵌入式标签列表
+     */
+    @Field("tags")
+    private List<ArticleTag> tags;
+
+    /**
+     * 文章标签嵌入式文档
+     */
+    @Data
+    @Builder
+    @NoArgsConstructor
+    @AllArgsConstructor
+    public static class ArticleTag {
+
+        /**
+         * 标签ID
+         */
+        @Field("tag_id")
+        private String tagId;
+
+        /**
+         * 标签名称
+         */
+        @Field("tag_name")
+        private String tagName;
+
+        /**
+         * 标签创建时间
+         */
+        @Field("create_time")
+        private LocalDateTime createTime;
+    }
 }
