@@ -1,12 +1,12 @@
 {
   "groups": [
     {
-      "name": "database",
+      "name": "datatype",
       "type": "com.ican.config.properties.DatabaseProperties",
       "sourceType": "com.ican.config.properties.DatabaseProperties"
     },
     {
-      "name": "database.mongodb",
+      "name": "datatype.mongodb",
       "type": "com.ican.config.properties.DatabaseProperties$MongoDbProperties",
       "sourceType": "com.ican.config.properties.DatabaseProperties"
     },
@@ -72,7 +72,55 @@
       "sourceType": "com.ican.config.properties.DatabaseProperties$MongoDbProperties"
     },
     {
-      "name": "database.type",
+      "name": "datasource.mongodb.auto-sync",
+      "type": "java.lang.Boolean",
+      "description": "是否启用自动同步",
+      "sourceType": "com.ican.config.properties.DatabaseProperties$MongoDbProperties"
+    },
+    {
+      "name": "datasource.mongodb.collection-prefix",
+      "type": "java.lang.String",
+      "description": "MongoDB集合前缀",
+      "sourceType": "com.ican.config.properties.DatabaseProperties$MongoDbProperties"
+    },
+    {
+      "name": "datasource.mongodb.enabled",
+      "type": "java.lang.Boolean",
+      "description": "是否启用MongoDB",
+      "sourceType": "com.ican.config.properties.DatabaseProperties$MongoDbProperties"
+    },
+    {
+      "name": "datasource.mongodb.sync-batch-size",
+      "type": "java.lang.Integer",
+      "description": "同步批次大小",
+      "sourceType": "com.ican.config.properties.DatabaseProperties$MongoDbProperties"
+    },
+    {
+      "name": "datatype.mongodb.auto-sync",
+      "type": "java.lang.Boolean",
+      "description": "是否启用自动同步",
+      "sourceType": "com.ican.config.properties.DatabaseProperties$MongoDbProperties"
+    },
+    {
+      "name": "datatype.mongodb.collection-prefix",
+      "type": "java.lang.String",
+      "description": "MongoDB集合前缀",
+      "sourceType": "com.ican.config.properties.DatabaseProperties$MongoDbProperties"
+    },
+    {
+      "name": "datatype.mongodb.enabled",
+      "type": "java.lang.Boolean",
+      "description": "是否启用MongoDB",
+      "sourceType": "com.ican.config.properties.DatabaseProperties$MongoDbProperties"
+    },
+    {
+      "name": "datatype.mongodb.sync-batch-size",
+      "type": "java.lang.Integer",
+      "description": "同步批次大小",
+      "sourceType": "com.ican.config.properties.DatabaseProperties$MongoDbProperties"
+    },
+    {
+      "name": "datatype.type",
       "type": "java.lang.String",
       "description": "数据库类型",
       "sourceType": "com.ican.config.properties.DatabaseProperties"
@@ -184,6 +232,30 @@
       "type": "java.lang.String",
       "description": "用户OpenID获取地址",
       "sourceType": "com.ican.config.properties.QqProperties"
+    },
+    {
+      "name": "spring.datatype.mongodb.auto-sync",
+      "type": "java.lang.Boolean",
+      "description": "是否启用自动同步",
+      "sourceType": "com.ican.config.properties.DatabaseProperties$MongoDbProperties"
+    },
+    {
+      "name": "spring.datatype.mongodb.collection-prefix",
+      "type": "java.lang.String",
+      "description": "MongoDB集合前缀",
+      "sourceType": "com.ican.config.properties.DatabaseProperties$MongoDbProperties"
+    },
+    {
+      "name": "spring.datatype.mongodb.enabled",
+      "type": "java.lang.Boolean",
+      "description": "是否启用MongoDB",
+      "sourceType": "com.ican.config.properties.DatabaseProperties$MongoDbProperties"
+    },
+    {
+      "name": "spring.datatype.mongodb.sync-batch-size",
+      "type": "java.lang.Integer",
+      "description": "同步批次大小",
+      "sourceType": "com.ican.config.properties.DatabaseProperties$MongoDbProperties"
     },
     {
       "name": "thread.pool.core-pool-size",

@@ -8,12 +8,14 @@ import com.ican.model.vo.response.ArticleBackResp;
 import com.ican.model.vo.response.ArticleHomeResp;
 import com.ican.model.vo.response.ArticleInfoResp;
 import com.ican.model.vo.response.ArticleResp;
+import io.swagger.models.auth.In;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.data.mongodb.core.query.Criteria;
 import org.springframework.data.mongodb.core.query.Query;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -33,19 +35,29 @@ public class ArticleMongoService extends ArticleService {
      * 添加文章（双写模式）
      */
     @Override
-    public void addArticle(ArticleReq article) {
+    public Integer addArticle(ArticleReq article) {
+        ArticleReq mongoArticle = BeanUtil.copyProperties(article, ArticleReq.class);
         // 写入MySQL（保持原有逻辑）
-        super.addArticle(article);
+        Integer id = super.addArticle(article);
         // 同步到MongoDB
-        syncArticleToMongoDB(article);
+        mongoArticle.setId(id);
+        syncArticleToMongoDB(mongoArticle);
+        return id;
     }
 
     private void syncArticleToMongoDB(ArticleReq articleReq) {
-        // 1. 转换为文档对象
+        // 转换为文档对象
         ArticleDocument articleDocument = new ArticleDocument();
         BeanUtil.copyProperties(articleReq, articleDocument);
-        // 2. 保存到MongoDB
-        mongodbService.insertDocument(articleReq, "article");
+        List<ArticleDocument.ArticleTag> articleTagList = new ArrayList();
+        for (String s : articleReq.getTagNameList()) {
+            ArticleDocument.ArticleTag articleTag = new ArticleDocument.ArticleTag();
+            articleTag.setTagName(s);
+            articleTagList.add(articleTag);
+        }
+        articleDocument.setTags(articleTagList);
+        // 保存到MongoDB
+        mongodbService.insertDocument(articleDocument, "article");
     }
 
 }

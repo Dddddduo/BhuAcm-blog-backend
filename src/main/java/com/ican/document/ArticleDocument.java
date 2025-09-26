@@ -117,23 +117,11 @@ public class ArticleDocument {
     @NoArgsConstructor
     @AllArgsConstructor
     public static class ArticleTag {
-
-        /**
-         * 标签ID
-         */
-        @Field("tag_id")
-        private String tagId;
-
         /**
          * 标签名称
          */
         @Field("tag_name")
         private String tagName;
 
-        /**
-         * 标签创建时间
-         */
-        @Field("create_time")
-        private LocalDateTime createTime;
     }
 }

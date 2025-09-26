@@ -94,7 +94,7 @@ public class ArticleService extends ServiceImpl<ArticleMapper, Article> {
     }
 
     @Transactional(rollbackFor = Exception.class)
-    public void addArticle(ArticleReq article) {
+    public Integer addArticle(ArticleReq article) {
         // 保存文章分类
         Integer categoryId = saveArticleCategory(article);
         // 添加文章
@@ -108,6 +108,7 @@ public class ArticleService extends ServiceImpl<ArticleMapper, Article> {
         baseMapper.insert(newArticle);
         // 保存文章标签
         saveArticleTag(article, newArticle.getId());
+        return newArticle.getId();
     }
 
     @Transactional(rollbackFor = Exception.class)

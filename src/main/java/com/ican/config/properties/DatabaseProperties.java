@@ -10,7 +10,7 @@ import org.springframework.stereotype.Component;
  */
 @Data
 @Component
-@ConfigurationProperties(prefix = "database")
+@ConfigurationProperties(prefix = "datatype")
 public class DatabaseProperties {
     
     /**
