@@ -37,8 +37,12 @@ sa-token:
   # 是否输出操作日志
   is-log: false
 
+# 数据源, 可选值: mysql, mongodb
+datatype:
+#  type: mysql
+  type: mongodb
 
-
+# spring项目基础配置
 spring:
   data:
     mongodb:
@@ -46,6 +50,7 @@ spring:
       database: blog
       host: 182.92.125.34
       port: 27017
+
   mvc:
     pathmatch:
       matching-strategy: ant_path_matcher

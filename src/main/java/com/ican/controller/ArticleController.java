@@ -15,6 +15,7 @@ import com.ican.model.vo.request.RecommendReq;
 import com.ican.model.vo.request.TopReq;
 import com.ican.model.vo.response.*;
 import com.ican.service.ArticleService;
+import com.ican.factory.DatabaseServiceFactory;
 import com.ican.strategy.context.LikeStrategyContext;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiImplicitParam;
@@ -43,6 +44,10 @@ public class ArticleController {
     @Autowired
     private LikeStrategyContext likeStrategyContext;
 
+    // 数据源工厂
+    @Autowired
+    private DatabaseServiceFactory databaseServiceFactory;
+
     /**
      * 查看后台文章列表
      *
@@ -67,6 +72,8 @@ public class ArticleController {
     @SaCheckPermission("blog:article:add")
     @PostMapping("/admin/article/add")
     public Result<?> addArticle(@Validated @RequestBody ArticleReq article) {
+        // 使用工厂类获取对应的服务
+        ArticleService articleService = databaseServiceFactory.getArticleService();
         articleService.addArticle(article);
         return Result.success();
     }
