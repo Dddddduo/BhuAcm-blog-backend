@@ -1,19 +1,16 @@
-
-以下是为北华大学ACM实验室官网优化的MD文档，结合技术特性与高校实验室场景进行了适配：
-
-
-## 北华大学ACM实验室官网  
-基于SpringBoot + Vue3开发的前后端分离技术型官网  
+## 北华大学程序设计工作室实验室官网  
+基于SpringBoot2.6 + Vue3开发的前后端分离的博客官网, 于本科阶段大二上学期进行构思并进行完成, 同样也是本人的毕业设计
 
 
 ### 技术架构  
 <p align="center">  
   <a target="_blank" href="https://github.com/YourRepository">  
-    <img src="https://img.shields.io/badge/JDK-11-green"/>  
-    <img src="https://img.shields.io/badge/SpringBoot-3.2.3-green"/>  
+    <img src="https://img.shields.io/badge/JDK-17-green"/>  
+    <img src="https://img.shields.io/badge/SpringBoot-2.6.4-green"/>  
     <img src="https://img.shields.io/badge/Vue-3.3.4-green"/>  
     <img src="https://img.shields.io/badge/MySQL-8.0.34-green"/>  
     <img src="https://img.shields.io/badge/MyBatisPlus-4.4.3-green"/>  
+     <img src="https://img.shields.io/badge/MongoDb-5.0.0-green"/>  
     <img src="https://img.shields.io/badge/Redis-7.2.1-green"/>  
     <img src="https://img.shields.io/badge/Elasticsearch-8.11.3-green"/>  
   </a>  
