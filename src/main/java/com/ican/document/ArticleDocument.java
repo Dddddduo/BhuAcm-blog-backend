@@ -1,5 +1,6 @@
 package com.ican.document;
 
+import io.swagger.annotations.ApiModelProperty;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -92,6 +93,24 @@ public class ArticleDocument {
     private Integer status;
 
     /**
+     * 标签列表
+     */
+    @Field("tagNameList")
+    private List<String> tagNameList;
+
+    /**
+     * 点赞量
+     */
+    @Field("likeCount")
+    private Integer likeCount;
+
+    /**
+     * 浏览量
+     */
+    @Field("viewCount")
+    private Integer viewCount;
+
+    /**
      * 发表时间
      */
     @Field("create_time")
@@ -103,25 +122,4 @@ public class ArticleDocument {
     @Field("update_time")
     private LocalDateTime updateTime;
 
-    /**
-     * 嵌入式标签列表
-     */
-    @Field("tags")
-    private List<ArticleTag> tags;
-
-    /**
-     * 文章标签嵌入式文档
-     */
-    @Data
-    @Builder
-    @NoArgsConstructor
-    @AllArgsConstructor
-    public static class ArticleTag {
-        /**
-         * 标签名称
-         */
-        @Field("tag_name")
-        private String tagName;
-
-    }
 }

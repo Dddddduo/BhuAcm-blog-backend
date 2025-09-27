@@ -25,6 +25,7 @@ import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
+import javax.annotation.PostConstruct;
 import java.util.List;
 
 import static com.ican.constant.OptTypeConstant.*;
@@ -39,14 +40,19 @@ import static com.ican.constant.OptTypeConstant.*;
 public class ArticleController {
 
     @Autowired
-    private ArticleService articleService;
-
-    @Autowired
     private LikeStrategyContext likeStrategyContext;
 
     // 数据源工厂
     @Autowired
     private DatabaseServiceFactory databaseServiceFactory;
+
+    private ArticleService articleService ;
+
+    // 在依赖注入完成后初始化ArticleService
+    @PostConstruct
+    public void init() {
+        articleService = databaseServiceFactory.getArticleService();
+    }
 
     /**
      * 查看后台文章列表
@@ -72,8 +78,6 @@ public class ArticleController {
     @SaCheckPermission("blog:article:add")
     @PostMapping("/admin/article/add")
     public Result<?> addArticle(@Validated @RequestBody ArticleReq article) {
-        // 使用工厂类获取对应的服务
-        ArticleService articleService = databaseServiceFactory.getArticleService();
         articleService.addArticle(article);
         return Result.success();
     }
