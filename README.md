@@ -1,154 +1,219 @@
-## 北华大学程序设计工作室实验室官网  
-基于SpringBoot2.6 + Vue3开发的前后端分离的博客官网, 于本科阶段大二上学期进行构思并进行完成, 同样也是本人的毕业设计
+# BhuAcm-blog-backend 项目文档
 
+## 项目概述
 
-### 技术架构  
-<p align="center">  
-  <a target="_blank" href="https://github.com/YourRepository">  
-    <img src="https://img.shields.io/badge/JDK-17-green"/>  
-    <img src="https://img.shields.io/badge/SpringBoot-2.6.4-green"/>  
-    <img src="https://img.shields.io/badge/Vue-3.3.4-green"/>  
-    <img src="https://img.shields.io/badge/MySQL-8.0.34-green"/>  
-    <img src="https://img.shields.io/badge/MyBatisPlus-4.4.3-green"/>  
-     <img src="https://img.shields.io/badge/MongoDb-5.0.0-green"/>  
-    <img src="https://img.shields.io/badge/Redis-7.2.1-green"/>  
-    <img src="https://img.shields.io/badge/Elasticsearch-8.11.3-green"/>  
-  </a>  
-</p>  
+**于本科阶段大二上学期进行构思并进行完成，同样也是本人的毕业设计**
 
+BhuAcm-blog-backend 是一个基于 Spring Boot + Vue3 开发的前后端分离博客系统，采用现代化的技术栈构建，支持多数据源、多存储策略、实时通信等高级功能。
 
-### 本地运行指南  
-1. **环境依赖**  
-   - JDK 11+  
-   - MySQL 8.0+（推荐8.0.34）  
-   - Node.js 18.x（npm 10+）  
-   - Redis 7.0+  
-   - Elasticsearch 8.0+（可选，用于搜索功能）  
+## 开发日志
 
-2. **数据库配置**  
-   - 导入根目录下的`acm_lab.sql`至本地数据库  
-   - 修改后端`application.yml`中的数据库连接信息：  
-     ```yaml  
-     spring:  
-       datasource:  
-         url: jdbc:mysql://localhost:3306/acm_lab?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai  
-         username: root  
-         password: your_password  
-     ```  
+### 项目启动阶段 (2024年11月)
+- **2024/11/28 18:54** - 项目主启动类 <mcsymbol name="BlogApplication" filename="BlogApplication.java" path="/Users/dduo/IdeaProjects/BhuAcm-blog-backend/src/main/java/com/ican/BlogApplication.java" startline="1" type="class">BlogApplication</mcsymbol> 创建完成，标志着项目正式启动
+- **2024/11/29 22:09** - 核心实体类 <mcsymbol name="User" filename="User.java" path="/Users/dduo/IdeaProjects/BhuAcm-blog-backend/src/main/java/com/ican/entity/User.java" startline="1" type="class">User</mcsymbol> 设计完成，包含完整的用户信息管理功能
 
-3. **前端初始化**  
-   ```bash  
-   # 进入前端目录  
-   cd frontend  
-   # 移除token.ts中的domain配置（如有）  
-   # 安装依赖  
-   npm install  
-   # 启动开发环境  
-   npm run dev  
-   ```  
+### 核心功能开发阶段 (2024年12月)
+- **2024/12/04 21:46** - 文章实体类 <mcsymbol name="Article" filename="Article.java" path="/Users/dduo/IdeaProjects/BhuAcm-blog-backend/src/main/java/com/ican/entity/Article.java" startline="1" type="class">Article</mcsymbol> 设计完成，支持多种文章状态管理
+- **2024/12/04 22:31** - 文章服务类 <mcsymbol name="ArticleService" filename="ArticleService.java" path="/Users/dduo/IdeaProjects/BhuAcm-blog-backend/src/main/java/com/ican/service/ArticleService.java" startline="1" type="class">ArticleService</mcsymbol> 实现，包含完整的CRUD操作和业务逻辑
+- **2024/12/05 10:03** - 用户控制器 <mcsymbol name="UserController" filename="UserController.java" path="/Users/dduo/IdeaProjects/BhuAcm-blog-backend/src/main/java/com/ican/controller/UserController.java" startline="1" type="class">UserController</mcsymbol> 开发完成，提供用户管理API接口
+- **2024/12/05 15:32** - 用户服务类 <mcsymbol name="UserService" filename="UserService.java" path="/Users/dduo/IdeaProjects/BhuAcm-blog-backend/src/main/java/com/ican/service/UserService.java" startline="1" type="class">UserService</mcsymbol> 完善，实现复杂的用户权限和状态管理
 
-4. **后端启动**  
-   - 使用IDEA直接运行`Application.java`  
-   - 首次启动会自动创建管理员账号：  
-     **用户名**：admin@beihua.edu.cn  **密码**：acm2025  
+### 高级功能集成阶段
+- MongoDB 数据源配置和双数据源切换功能
+- Redis 缓存和会话管理集成
+- WebSocket 实时通信功能
+- 文件上传多存储策略（本地、OSS、COS、七牛云）
+- 定时任务和异步处理机制
+- 完整的权限管理和安全控制
 
+## 技术栈
 
-### 功能特性  
-#### 核心模块  
-- **竞赛管理**  
-  - 实时同步ACM/ICPC、CCPC等赛事信息  
-  - 赛事报名、队伍管理、成绩公示  
-  - 训练赛题库集成（支持Python/Java/C++在线评测）  
+### 后端技术
+- **框架**: Spring Boot 2.6.14
+- **语言**: Java 11
+- **ORM**: MyBatis-Plus 3.5.3.1
+- **安全**: Sa-Token 1.34.0
+- **缓存**: Redis
+- **数据库**: MySQL + MongoDB（双数据源）
+- **消息队列**: RabbitMQ
+- **搜索**: Elasticsearch
+- **文档**: Knife4j/Swagger
 
-- **成员管理**  
-  - 队员档案系统（含算法等级、竞赛履历）  
-  - 动态权限控制（教练/队员/访客三级权限）  
-  - 训练打卡记录与积分统计  
+### 前端技术
+- Vue3 + TypeScript
+- Element Plus UI组件库
+- Axios HTTP客户端
+- Vue Router 路由管理
+- Pinia 状态管理
 
-- **资源中心**  
-  - 算法教程（动态规划/图论/数据结构等专题）  
-  - 历年真题下载（附题解与代码示例）  
-  - 开源项目仓库（ACM模板库、工具类）  
+## 项目结构
 
-- **社区互动**  
-  - 技术博客（支持Markdown与代码高亮）  
-  - 讨论区（问题标签分类、精华帖置顶）  
-  - 通知公告（含邮件/微信推送）  
+```
+src/main/java/com/ican/
+├── annotation/          # 自定义注解
+├── aspect/              # AOP切面
+├── config/              # 配置类
+├── constant/            # 常量定义
+├── controller/          # 控制器层
+├── entity/              # 实体类
+├── enums/               # 枚举类
+├── mapper/              # 数据访问层
+├── model/               # 数据传输对象
+├── service/             # 业务逻辑层
+├── strategy/            # 策略模式实现
+├── utils/               # 工具类
+└── websocket/           # WebSocket通信
+```
 
-#### 技术亮点  
-- **前后端分离架构**  
-  - 前端：Vue3 + TypeScript + Vite + Element Plus  
-  - 后端：SpringBoot + MyBatisPlus + Sa-Token权限体系  
-  - 接口遵循RESTful规范，Swagger文档全覆盖  
+## 核心功能模块
 
-- **高性能支持**  
-  - 缓存层：Redis实现热点数据缓存（如赛事排行榜）  
-  - 搜索服务：Elasticsearch实现毫秒级全文检索  
-  - 异步处理：RabbitMQ实现通知消息队列  
+### 1. 用户管理模块
+- 用户注册、登录、注销
+- 角色权限管理（RBAC）
+- 在线用户监控
+- 密码修改和安全控制
 
-- **扩展能力**  
-  - 支持OJ平台对接（如洛谷、Codeforces）  
-  - 自定义评测引擎（可扩展新编程语言）  
-  - 数据可视化：ECharts展示竞赛成绩趋势  
+### 2. 文章管理模块
+- 文章CRUD操作
+- 文章分类和标签管理
+- 文章搜索和推荐
+- 点赞、评论、收藏功能
 
+### 3. 文件管理模块
+- 多存储策略支持
+- 图片上传和压缩
+- 文件分类管理
+- 存储空间监控
 
-### 开发环境配置  
-| 工具/组件        | 版本          | 说明                     |  
-|------------------|---------------|--------------------------|  
-| IDEA             | 2023.3+       | Java后端开发             |  
-| VSCode           | 1.85+         | Vue前端开发              |  
-| Navicat          | 16+           | 数据库管理               |  
-| RedisDesktop     | 10+           | Redis可视化工具          |  
-| Xshell/Xftp      | 7+            | 服务器远程管理           |  
+### 4. 系统管理模块
+- 网站配置管理
+- 操作日志记录
+- 异常监控和处理
+- 定时任务管理
 
-| 运行环境         | 版本          | 安装建议                 |  
-|------------------|---------------|--------------------------|  
-| OpenJDK          | 17            | 推荐采用LTS版本          |  
-| MySQL            | 8.0.34        | 启用InnoDB存储引擎       |  
-| Elasticsearch    | 8.11.3        | 配置IK分词器             |  
-| Redis            | 7.2.1         | 开启持久化（AOF模式）    |  
+### 5. 实时通信模块
+- WebSocket消息推送
+- 在线聊天功能
+- 实时通知系统
+- 访客统计
 
+## 数据库设计
 
-### 服务器部署方案  
-#### 推荐配置  
-- 服务器：腾讯云/阿里云 4核8G CentOS 8  
-- 存储：OSS对象存储（用于静态资源）  
-- 容器化：Docker + Docker Compose一键部署  
-- 代理：Nginx实现负载均衡与HTTPS加速  
+### 主要数据表
+- `user` - 用户表
+- `article` - 文章表  
+- `category` - 分类表
+- `tag` - 标签表
+- `comment` - 评论表
+- `role` - 角色表
+- `menu` - 菜单表
+- `file` - 文件表
 
-#### 部署步骤  
-```bash  
-# 拉取镜像  
-docker-compose pull backend frontend redis elasticsearch  
+### MongoDB集合
+- `article_document` - 文章文档（用于搜索）
+- `chat_record` - 聊天记录
 
-# 启动服务  
-docker-compose up -d  
+## 配置说明
 
-# 初始化数据（首次部署）  
-docker exec -it backend java -jar /app/init-data.jar  
-```  
+### 多环境配置
+- `application.yml` - 主配置文件
+- `application-dev.yml` - 开发环境配置
+- `application-prod.yml` - 生产环境配置
 
+### 数据源配置
+支持MySQL和MongoDB双数据源，可根据业务需求灵活切换。
 
-### 团队协作规范  
-1. **代码管理**  
-   - 分支策略：主分支`main`（生产环境）、开发分支`dev`（功能迭代）  
-   - 提交规范：采用Angular Commit格式（feat/fix/docs等前缀）  
+## API接口文档
 
-2. **文档协作**  
-   - 接口文档：Swagger在线文档 + Postman测试用例  
-   - 技术wiki：使用语雀/Notion维护开发手册  
+项目集成了Knife4j，访问 `/doc.html` 即可查看完整的API文档，包含：
+- 接口详细说明
+- 请求参数说明
+- 响应示例
+- 在线测试功能
 
+## 部署要求
 
-### 联系我们  
-- **邮箱**：acm@beihua.edu.cn  
-- **地址**：北华大学计算机科学技术学院第一教学楼1409室  
+### 系统要求
+- JDK 11+
+- MySQL 8.0+
+- Redis 6.0+
+- MongoDB 4.4+
+- Maven 3.6+
 
+### 部署步骤
+1. 克隆项目代码
+2. 配置数据库连接信息
+3. 导入SQL脚本
+4. 配置Redis和MongoDB
+5. 使用Maven打包项目
+6. 运行Spring Boot应用
 
-### 贡献指南  
-欢迎Star/Fork本项目！如需贡献代码，请提交PR至`dev`分支，并注明：  
-- 功能模块（如：feat: 添加训练赛模块）  
-- 问题修复（如：fix: 解决评测超时问题）  
+## 特色功能
 
- 
+### 1. 双数据源支持
+项目同时支持关系型数据库MySQL和文档数据库MongoDB，可根据业务场景选择合适的数据存储方案。
 
-需要调整或补充其他内容（如实验室特色功能、导师介绍等），可以随时告知！
+### 2. 多存储策略
+支持本地存储、阿里云OSS、腾讯云COS、七牛云等多种文件存储方式，满足不同部署环境的需求。
+
+### 3. 实时WebSocket通信
+基于WebSocket实现实时消息推送、在线聊天等功能，提升用户体验。
+
+### 4. 完整的权限管理
+基于Sa-Token实现细粒度的权限控制，支持角色权限分离和动态权限分配。
+
+### 5. 策略模式应用
+在搜索、文件上传等场景中使用策略模式，提高代码的可扩展性和维护性。
+
+## 开发规范
+
+### 代码规范
+- 遵循阿里巴巴Java开发规范
+- 使用Lombok减少样板代码
+- 统一的异常处理机制
+- 规范的日志记录
+
+### 项目结构规范
+- 清晰的分层架构
+- 统一的包命名规范
+- 标准化的DTO/VO设计
+- 一致的API响应格式
+
+## 未来规划
+
+### 短期目标
+- [ ] 性能优化和缓存策略改进
+- [ ] 更多的第三方登录集成
+- [ ] 移动端适配和响应式设计
+
+### 长期规划
+- [ ] 微服务架构改造
+- [ ] 容器化部署支持
+- [ ] 智能化内容推荐
+- [ ] 多语言国际化支持
+
+## 致谢
+
+### 指导老师
+衷心感谢指导老师在项目开发过程中给予的悉心指导和宝贵建议。老师的专业知识和丰富经验为项目的顺利完成提供了重要支持。
+
+### 学校支持
+感谢学校提供的良好学习环境和实验条件，为项目的技术研究和实践开发创造了有利条件。
+
+### 开源社区
+感谢Spring Boot、MyBatis-Plus、Sa-Token等优秀开源项目的贡献者，这些优秀的开源技术为项目的快速开发提供了坚实基础。
+
+### 同学帮助
+感谢在项目开发过程中给予帮助和支持的同学们，大家的讨论和交流为项目的完善提供了很多有益的思路。
+
+## 总结
+
+BhuAcm-blog-backend项目作为本科阶段的毕业设计，不仅实现了博客系统的基本功能，还融入了许多现代化的技术特性。通过这个项目的开发，我深入学习了Spring Boot生态系统的各项技术，掌握了企业级应用开发的完整流程，为未来的职业发展奠定了坚实的基础。
+
+项目代码结构清晰，功能完善，具有良好的可扩展性和维护性，体现了扎实的编程功底和系统设计能力。
+
+---
+
+*文档最后更新：2024年12月*
+*项目作者：Dduo*
+*联系方式：[请补充]*
