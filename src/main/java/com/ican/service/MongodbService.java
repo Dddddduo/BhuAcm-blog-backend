@@ -79,7 +79,7 @@ public class MongodbService {
     /**
      * 查看集合中符合条件的文档（保持不变）
      * @param collectionName
-     * @param Query
+     * @param query
      * @param entityClass
      * @return
      * @param <T>

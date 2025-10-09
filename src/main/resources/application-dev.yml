@@ -63,7 +63,7 @@ spring:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://182.92.125.34:3306/blog
     username: root
-    password: 123456
+    password: zdy123456
     druid:
       # 初始连接数
       initial-size: 10
@@ -155,7 +155,7 @@ thread:
     queue-capacity: 50
     keep-alive-seconds: 60
 
-# 搜索模式 可选 elasticsearch、mysql
+# 搜索模式 可选 elasticsearch、mysql、mongodb
 search:
   mode: mysql
 

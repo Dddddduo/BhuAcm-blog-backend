@@ -1,6 +1,7 @@
 package com.ican.service;
 
 import cn.hutool.core.bean.BeanUtil;
+import com.ican.constant.RedisConstant;
 import com.ican.document.ArticleDocument;
 import com.ican.model.vo.PageResult;
 import com.ican.model.vo.query.ArticleQuery;
@@ -25,6 +26,9 @@ public class ArticleMongoService extends ArticleService {
 
     @Autowired
     private MongodbService mongodbService;
+
+    @Autowired
+    private RedisService redisService;
     
     /**
      * 添加文章（双写模式）
@@ -49,14 +53,14 @@ public class ArticleMongoService extends ArticleService {
         Query query = buildArticleQuery(articleQuery);
         // 查询文章数量
         List<ArticleDocument> articleList = mongodbService.findDocuments("article", query, ArticleDocument.class);
-        if (articleList.size() == 0) {
-            return new PageResult<>();
-        }
+        if (articleList.size() == 0) {return new PageResult<>();}
         // 查询文章后台信息
         List<ArticleBackResp> articleBackRespList =new ArrayList<>();
         articleList.forEach(item -> {
+            // 获取部分字段数据
             ArticleBackResp articleBackResp = new ArticleBackResp();
             BeanUtil.copyProperties(item, articleBackResp);
+            // 获取标签数据
             List<String> tagNameList = item.getTagNameList();
             List<TagOptionResp> tagVOList = new ArrayList<>();
             tagNameList.forEach(tagName -> {
@@ -66,6 +70,17 @@ public class ArticleMongoService extends ArticleService {
             });
             articleBackResp.setTagVOList(tagVOList);
             articleBackRespList.add(articleBackResp);
+        });
+        // 获取浏览量 从redis中获取
+        Map<Object, Double> viewCountMap = redisService.getZsetAllScore(RedisConstant.ARTICLE_VIEW_COUNT);
+        // 点赞量 从redis中获取
+        Map<String, Integer> likeCountMap = redisService.getHashAll(RedisConstant.ARTICLE_LIKE_COUNT);
+        // 封装文章后台信息
+        articleBackRespList.forEach(item -> {
+            Double viewCount = Optional.ofNullable(viewCountMap.get(item.getId())).orElse((double) 0);
+            item.setViewCount(viewCount.intValue());
+            Integer likeCount = likeCountMap.get(item.getId().toString());
+            item.setLikeCount(Optional.ofNullable(likeCount).orElse(0));
         });
         return new PageResult<>(articleBackRespList, (long) articleBackRespList.size());
     }
@@ -92,14 +107,15 @@ public class ArticleMongoService extends ArticleService {
             tagVOList.add(tagOptionResp);
         });
         article.setTagVOList(tagVOList);
-        // 浏览量增加,更新文档
-        int viewCountNow = articleDocument.getViewCount() + 1;
-        // 更新文档
-        Update update = new Update();
-        update.set("viewCount", viewCountNow);
-        mongodbService.updateDocument(articleId.toString(), "article", update);
-        articleDocument.setViewCount(viewCountNow);
-        // 获取前后两篇文章
+        // 浏览量增加,更新文档 这边已经改成redis存储浏览量
+        // todo 从redis中获取浏览量和点赞数据,定期持久化到mysql里面
+//        int viewCountNow = articleDocument.getViewCount() + 1;
+//        Update update = new Update();
+//        update.set("viewCount", viewCountNow);
+//        mongodbService.updateDocument(articleId.toString(), "article", update);
+//        articleDocument.setViewCount(viewCountNow);
+        redisService.incrZet(RedisConstant.ARTICLE_VIEW_COUNT, articleId, 1D);
+        // 获取前一篇文章 当前的文章id不能为
         List<ArticleDocument> articleNextList = mongodbService.findDocumentById("article", (articleId+1)+"", ArticleDocument.class);
         if(articleNextList.size() != 0){
             ArticleDocument articleNextDocument = articleNextList.get(0);
@@ -109,8 +125,9 @@ public class ArticleMongoService extends ArticleService {
             articlePaginationResp.setArticleTitle(articleNextDocument.getArticleTitle());
             article.setNextArticle(articlePaginationResp);
         }
+        // 获取后一篇文章
         List<ArticleDocument> articleLastList = mongodbService.findDocumentById("article", (articleId-1)+"", ArticleDocument.class);
-        if(articleLastList.size() != 0){
+        if(!articleLastList.isEmpty()){
             ArticleDocument articleLastDocument = articleLastList.get(0);
             ArticlePaginationResp articlePaginationResp = new ArticlePaginationResp();
             articlePaginationResp.setId(articleId-1);
@@ -118,11 +135,17 @@ public class ArticleMongoService extends ArticleService {
             articlePaginationResp.setArticleTitle(articleLastDocument.getArticleTitle());
             article.setLastArticle(articlePaginationResp);
         }
+        // 获取文章的点赞数据
+        Integer likeCount = redisService.getHash(RedisConstant.ARTICLE_LIKE_COUNT, articleId.toString());
+        article.setLikeCount(Optional.ofNullable(likeCount).orElse(0));
+        // 获取文章的浏览数据
+        Double viewCount = redisService.getZsetScore(RedisConstant.ARTICLE_VIEW_COUNT, articleId);
+        article.setViewCount(Optional.ofNullable(viewCount).orElse(0D).intValue());
         return article;
     }
 
     /**
-     * 删除文章
+     * 删除文章(从mongodb中删除)
      */
     @Override
     public void deleteArticle(List<Integer> articleIdList) {
@@ -130,7 +153,7 @@ public class ArticleMongoService extends ArticleService {
     }
 
     /**
-     * 更新文章
+     * 更新文章(更新mongodb中的文档内容)
      */
     @Override
     public void updateArticle(ArticleReq articleReq) {
@@ -154,7 +177,6 @@ public class ArticleMongoService extends ArticleService {
         // 转换为文档对象
         ArticleDocument articleDocument = new ArticleDocument();
         BeanUtil.copyProperties(articleReq, articleDocument);
-        articleDocument.setLikeCount(0);
         articleDocument.setViewCount(0);
         articleDocument.setUpdateTime(LocalDateTime.now());
         articleDocument.setCreateTime(LocalDateTime.now());

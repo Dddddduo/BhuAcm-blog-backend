@@ -14,6 +14,7 @@ import com.ican.model.vo.request.DeleteReq;
 import com.ican.model.vo.request.RecommendReq;
 import com.ican.model.vo.request.TopReq;
 import com.ican.model.vo.response.*;
+import com.ican.service.ArticleMongoService;
 import com.ican.service.ArticleService;
 import com.ican.factory.DatabaseServiceFactory;
 import com.ican.strategy.context.LikeStrategyContext;
@@ -197,7 +198,7 @@ public class ArticleController {
     @SaCheckPermission("blog:article:like")
     @PostMapping("/article/{articleId}/like")
     public Result<?> likeArticle(@PathVariable("articleId") Integer articleId) {
-        // 策略模式 调用策略上下文 传入参数
+        // 策略设计模式 调用策略上下文 传入参数
         likeStrategyContext.executeLikeStrategy(LikeTypeEnum.ARTICLE, articleId);
         return Result.success();
     }

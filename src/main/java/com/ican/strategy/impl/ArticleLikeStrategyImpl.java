@@ -16,8 +16,9 @@ import java.util.Objects;
 
 /**
  * 文章点赞策略
- *
+ * redis mysql mongodb
  * @author Dduo
+ * @date 2025/09/28 10:00
  */
 @Service("articleLikeStrategyImpl")
 public class ArticleLikeStrategyImpl implements LikeStrategy {

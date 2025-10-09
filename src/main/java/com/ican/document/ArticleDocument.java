@@ -99,12 +99,6 @@ public class ArticleDocument {
     private List<String> tagNameList;
 
     /**
-     * 点赞量
-     */
-    @Field("likeCount")
-    private Integer likeCount;
-
-    /**
      * 浏览量
      */
     @Field("viewCount")
