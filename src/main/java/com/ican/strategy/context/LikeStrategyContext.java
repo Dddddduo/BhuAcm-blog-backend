@@ -28,5 +28,6 @@ public class LikeStrategyContext {
      */
     public void executeLikeStrategy(LikeTypeEnum likeType, Integer typeId) {
         likeStrategyMap.get(likeType.getStrategy()).like(typeId);
+        
     }
 }
